@@ -1,0 +1,13 @@
+###
+### mkdocs-site.yml
+###
+dev_addr: 0.0.0.0:8888
+docs_dir: Labs
+edit_uri:
+repo_name: nirgeier/Copilot-Prompts-Workshop
+repo_url: https://github.com/nirgeier/Copilot-Prompts-Workshop
+site_author: Nir Geier - nirgeier@gmail.com
+site_description: A collection of GitHub Labs for learning and practicing GitHub skills.
+site_dir: ./mkdocs-site
+site_name: Copilot-Prompts-Workshop
+site_url: https://nirgeier.github.io/Copilot-Prompts-Workshop/

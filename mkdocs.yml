@@ -1,0 +1,255 @@
+###
+### mkdocs-theme.yml
+###
+copyright:
+  '©2021-2025 Nir Geier<br/><a href="https://visitor-badge.laobi.icu/badge?page_id=nirgeier" target="_blank" rel="noopener"><img
+  src="https://visitor-badge.laobi.icu/badge?page_id=nirgeier" alt="Visitor Badge"></a>'
+theme:
+  name: material
+  custom_dir: mkdocs/overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    - content.footer.last-updated
+    - content.footer.contributors
+    - navigation.expand: false
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant # Disabled for live reload during development
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top: true
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+    - toc.sticky
+
+    #- header.autohide  # Disabled to keep top nav always visible
+
+  # 👈 enables avatar display
+  palette:
+    # Dark mode only
+    - scheme: slate
+      primary: indigo # You can choose any color here
+
+  font:
+    text: Mulish
+    code: JetBrains Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+    admonition:
+      note: material/lightbulb
+###
+### mkdocs-nav.yml
+###
+
+nav:
+    - "Start Here": index.md
+    - "Labs":
+          - "Overview": labs.md
+          - "Lab 01 - Setup": 01-setup.md
+          - "Lab 02 - Inline Suggestions": 02-suggestions-inline.md
+          - "Lab 03 - Inline Chat": 03-inline-chat.md
+          - "Lab 04 - Chat": 04-chat.md
+          - "Lab 05 - BuiltIn Prompts": 05-builtin-prompts.md
+          - "Lab 06 - Plan Mode": 06-plan-mode.md
+          - "Lab 07 - Agent Mode (Part 01)": 07-agent-mode-part01.md
+          - "Lab 08 - Building a CLI": 08-agent-mode-part02.md
+          - "Lab 09 - Custom Instructions": 09-custom-instructions.md
+          - "Lab 10 - Advanced Instructions": 10-advanced-instructions.md
+          - "Lab 11 - Reusable Prompts": 11-custom-prompts.md
+          - "Lab 12 - Custom Agents": 12-custom-agents.md
+          - "Lab 13 - Custom Prompts": 13-custom-prompts.md
+    - "Resources":
+          - "Calculator Project - Copilot Instructions": resources/custom-instructions.md
+          - "Good Prompts vs Bad Prompts - Examples": resources/good-vs-bad-prompts.md
+          - "perf agent": resources/perf-agent.md
+          - "test agent": resources/test-agent.md
+    - "Tasks":
+          - Tasks/index.md
+          - "Lab 01 - Setup": Tasks/Lab-01.md
+          - "Lab 02 - Inline Suggestions": Tasks/Lab-02.md
+          - "Lab 03 - Inline Chat": Tasks/Lab-03.md
+          - "Lab 04 - Chat": Tasks/Lab-04.md
+          - "Lab 05 - BuiltIn Prompts": Tasks/Lab-05.md
+          - "Lab 06 - Plan Mode": Tasks/Lab-06.md
+          - "Lab 07 - Agent Mode (Part 01)": Tasks/Lab-07.md
+          - "Lab 08 - Building a CLI": Tasks/Lab-08.md
+          - "Lab 09 - Custom Instructions": Tasks/Lab-09.md
+          - "Lab 10 - Advanced Instructions": Tasks/Lab-10.md
+          - "Lab 11 - Reusable Prompts": Tasks/Lab-11.md
+          - "Lab 12 - Custom Agents": Tasks/Lab-12.md
+          - "Lab 13 - Custom Prompts": Tasks/Lab-13.md
+    - "Assets":
+          - "Lab 01 - Setup": labs-assets/01-setup-assets.md
+          - "Lab 02 - Inline Suggestions": labs-assets/02-suggestions-inline-assets.md
+          - "Lab 03 - Inline Chat": labs-assets/03-inline-chat-assets.md
+          - "Lab 04 - Chat": labs-assets/04-chat-assets.md
+          - "Lab 05 - BuiltIn Prompts": labs-assets/05-builtin-prompts-assets.md
+          - "Lab 06 - Plan Mode": labs-assets/06-plan-mode-assets.md
+          - "Lab 07 - Agent Mode (Part 01)": labs-assets/07-agent-mode-part01-assets.md
+          - "Lab 08 - Building a CLI": labs-assets/08-agent-mode-part02-assets.md
+          - "Lab 09 - Custom Instructions": labs-assets/09-custom-instructions-assets.md
+          - "Lab 10 - Advanced Instructions": labs-assets/10-advanced-instructions-assets.md
+          - "Lab 11 - Reusable Prompts": labs-assets/11-custom-prompts-assets.md
+          - "Lab 12 - Custom Agents": labs-assets/12-custom-agents-assets.md
+          - "Lab 13 - Custom Prompts": labs-assets/13-custom-prompts-assets.md
+###
+### mkdocs-site.yml
+###
+dev_addr: 0.0.0.0:8888
+docs_dir: Labs
+edit_uri:
+repo_name: nirgeier/Copilot-Prompts-Workshop
+repo_url: https://github.com/nirgeier/Copilot-Prompts-Workshop
+site_author: Nir Geier - nirgeier@gmail.com
+site_description: A collection of GitHub Labs for learning and practicing GitHub skills.
+site_dir: ./mkdocs-site
+site_name: Copilot-Prompts-Workshop
+site_url: https://nirgeier.github.io/Copilot-Prompts-Workshop/
+###
+### mkdocs-extra.yml
+###
+
+extra:
+  assets:
+    - ./assets/images/
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nirgeier/Copilot-Prompts-Workshop
+      name: View on GitHub
+      class: social-class__github
+
+    - icon: octicons/repo-forked-16
+      link: https://github.com/nirgeier/Copilot-Prompts-Workshop/network/members
+      name: Fork this repo
+      class: social-class__fork
+
+    - icon: octicons/star-16
+      link: https://github.com/nirgeier/Copilot-Prompts-Workshop/stargazers
+      name: Star this repo
+      class: social-class__star
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nirgeier/
+      name: Connect on LinkedIn
+      class: social-class__linkedin
+
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/U6xW23Ss
+      name: Follow me on Discord
+      class: social-class__discord
+
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/1755598/codewizard
+      name: Follow me on Stack Overflow
+      class: social-class__stackoverflow
+
+    - icon: fontawesome/brands/whatsapp
+      link: https://wa.me/972548122310
+      name: Follow me on WhatsApp
+      class: social-class__whatsapp
+
+    - icon: fontawesome/solid/envelope
+      link: mailto:nirg@codewizard.co.il
+      name: Email me
+      class: social-class__email
+
+extra_css:
+  - ./assets/stylesheets/codewizard.css?v=1766553928
+extra_javascript:
+  - https://buttons.github.io/buttons.js?v=1766553928
+###
+### mkdocs-extensions.yml
+###
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      baselevel: 1
+      toc_depth: 3
+  - abbr
+  - tables
+  - admonition # For callouts/notes
+  - footnotes # Footnotes support
+  - attr_list # Attribute lists for elements
+  - def_list # Definition lists
+  - md_in_html # Markdown inside HTML blocks
+  - smarty # Smart punctuation
+  - meta
+  - codehilite:
+      guess_lang: true # Fallback code highlighting
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details # Collapsible details
+  - pymdownx.inlinehilite # Inline code highlighting
+  - pymdownx.keys # Keyboard key formatting
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tilde # Subscript/superscript
+  - pymdownx.snippets # Snippet includes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: "!!python/name:pymdownx.superfences.fence_code_format"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+###
+### mkdocs-plugins.yml
+###
+
+plugins:
+  - awesome-pages
+  - meta
+  # - pdf-export:
+  #     combined: true # all pages in one PDF
+  #     combined_output_path: docs/Full-Documentation.pdf
+  #     media_type: print
+  #     verbose: true
+  # Git
+  #- git-authors
+  - git-committers:
+      branch: main
+      docs_path: Labs # set if your docs folder is not root
+      enabled: true
+      repository: nirgeier/Copilot-Prompts-Workshop
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enable_git_follow: false
+      fallback_to_build_date: true
+      locale: en
+      timezone: UTC
+      type: date
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+  # Leave this one as the last one in the list
+  - include-markdown
+  - print-site
