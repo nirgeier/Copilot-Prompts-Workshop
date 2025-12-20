@@ -60,7 +60,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766239463">
+      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766241639">
     
     <script>__md_scope=new URL("/Copilot-Prompts-Workshop/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -914,11 +914,176 @@
 </span></code></pre></div>
 </li>
 </ul>
-<h3 id="03-inline-chat-03-tasks">03. Tasks:<a class="headerlink" href="#03-inline-chat-03-tasks" title="Permanent link">&para;</a></h3>
+<h3 id="03-inline-chat-03-tasks">03. Tasks<a class="headerlink" href="#03-inline-chat-03-tasks" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Use the inline Chat to add code which will verify that the divided function does not divide by 0.</li>
 <li>Add comments to the the functions.</li>
-</ul></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
+</ul></section><section class="print-page" id="04-chat" heading-number="2.5"><h1 id="04-chat-lab-04-chat">Lab 04 - Chat<a class="headerlink" href="#04-chat-lab-04-chat" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In this lab we will write prompts in the chat asking it to create main python code which will test our calculator.</li>
+</ul>
+<h2 id="04-chat-overview">Overview<a class="headerlink" href="#04-chat-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The chat feature allows you to have a more interactive experience with GitHub Copilot</li>
+<li><code>GitHub Copilot Chat</code>, enabling you to <code>ask</code> questions, <code>request</code> code snippets, and much more.</li>
+<li>The chat mode is the core of GitHub Copilot&rsquo;s advanced capabilities, allowing for a more conversational and context-aware coding experience.</li>
+</ul>
+<hr />
+<p><img src="../assets/images/tldr.png" alt="Chat Overview" style="width:100px; border-radius:25px;"/></p>
+<ol>
+<li><strong>Open Chat</strong>.</li>
+<li><strong>Request Code GeneratChangesion</strong>.</li>
+<li><strong>Ask Questions</strong>.</li>
+</ol>
+<hr />
+<h2 id="04-chat-steps-to-use-chat">Steps to Use Chat<a class="headerlink" href="#04-chat-steps-to-use-chat" title="Permanent link">&para;</a></h2>
+<h3 id="04-chat-01-open-chat">01. Open Chat:<a class="headerlink" href="#04-chat-01-open-chat" title="Permanent link">&para;</a></h3>
+<ul>
+<li>You can open the Chat panel in several ways:<ul>
+<li>Press <code>Cmd+Shift+C</code> (macOS) or <code>Ctrl+Shift+C</code> (Windows/Linux).</li>
+<li>Use the Icon from the <code>Github Copilot</code> top icon.</li>
+<li>Right-click in the editor and select <code>GitHub Copilot: Open Chat</code>. </li>
+</ul>
+</li>
+<li>Once the Chat panel is open, you can type your requests in the input box at the bottom.</li>
+</ul>
+<hr />
+<h3 id="04-chat-02-use-chat">02. Use Chat<a class="headerlink" href="#04-chat-02-use-chat" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>In the Chat input box, write the following prompt:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#04-chat-__codelineno-0-1"></a>1. Generate a main.py file that tests all functions in calculator.py
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#04-chat-__codelineno-0-2"></a>2. Explain how to use the add function in calculator.py
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#04-chat-__codelineno-0-3"></a>3. Print out instructions on how to run the tests
+</span></code></pre></div>
+<p><details>
+<summary>Possible solution</summary></p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#04-chat-__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">calculator</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#04-chat-__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#04-chat-__codelineno-1-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_add</span><span class="p">():</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#04-chat-__codelineno-1-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the add function.&quot;&quot;&quot;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#04-chat-__codelineno-1-5"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#04-chat-__codelineno-1-6"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#04-chat-__codelineno-1-7"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#04-chat-__codelineno-1-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_add passed&quot;</span><span class="p">)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#04-chat-__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#04-chat-__codelineno-1-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_subtract</span><span class="p">():</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#04-chat-__codelineno-1-11"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the subtract function.&quot;&quot;&quot;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#04-chat-__codelineno-1-12"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#04-chat-__codelineno-1-13"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">4</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#04-chat-__codelineno-1-14"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#04-chat-__codelineno-1-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_subtract passed&quot;</span><span class="p">)</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#04-chat-__codelineno-1-16"></a>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#04-chat-__codelineno-1-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_multiply</span><span class="p">():</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#04-chat-__codelineno-1-18"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the multiply function.&quot;&quot;&quot;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#04-chat-__codelineno-1-19"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#04-chat-__codelineno-1-20"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">6</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#04-chat-__codelineno-1-21"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#04-chat-__codelineno-1-22"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_multiply passed&quot;</span><span class="p">)</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#04-chat-__codelineno-1-23"></a>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#04-chat-__codelineno-1-24"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_divide</span><span class="p">():</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#04-chat-__codelineno-1-25"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the divide function.&quot;&quot;&quot;</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#04-chat-__codelineno-1-26"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#04-chat-__codelineno-1-27"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">2.5</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#04-chat-__codelineno-1-28"></a>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#04-chat-__codelineno-1-29"></a>    <span class="c1"># Test division by zero</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#04-chat-__codelineno-1-30"></a>    <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#04-chat-__codelineno-1-31"></a>        <span class="n">calculator</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#04-chat-__codelineno-1-32"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: ZeroDivisionError not raised&quot;</span><span class="p">)</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#04-chat-__codelineno-1-33"></a>    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#04-chat-__codelineno-1-34"></a>        <span class="k">assert</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Cannot divide by zero.&quot;</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#04-chat-__codelineno-1-35"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_divide passed&quot;</span><span class="p">)</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#04-chat-__codelineno-1-36"></a>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#04-chat-__codelineno-1-37"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#04-chat-__codelineno-1-38"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running tests...&quot;</span><span class="p">)</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#04-chat-__codelineno-1-39"></a>    <span class="n">test_add</span><span class="p">()</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#04-chat-__codelineno-1-40"></a>    <span class="n">test_subtract</span><span class="p">()</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#04-chat-__codelineno-1-41"></a>    <span class="n">test_multiply</span><span class="p">()</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#04-chat-__codelineno-1-42"></a>    <span class="n">test_divide</span><span class="p">()</span>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#04-chat-__codelineno-1-43"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</details></p>
+</li>
+</ul></section><section class="print-page" id="05-builtin-prompts" heading-number="2.6"><h1 id="05-builtin-prompts-lab-05-builtin-prompts">Lab 05 - BuiltIn Prompts<a class="headerlink" href="#05-builtin-prompts-lab-05-builtin-prompts" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In this lab, we will explore how to use <code>GitHub Copilot's</code> built-in prompts to upgrade and maintain our calculator code.</li>
+<li>Those built-in prompts help you quickly generate explanations, documentation, and tests for your code.</li>
+<li>Those commands are available in both Chat and Inline Chat modes and known as <code>Slash commands</code></li>
+</ul>
+<hr />
+<h2 id="05-builtin-prompts-overview">Overview<a class="headerlink" href="#05-builtin-prompts-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>GitHub Copilot provides several slash commands that act as shortcuts for common tasks:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>/clear</code></td>
+<td style="text-align: left;">Clear the session context.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/doc</code></td>
+<td style="text-align: left;">Generate documentation for the selected code.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/explain</code></td>
+<td style="text-align: left;">Explain how the selected code works.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/ext</code></td>
+<td style="text-align: left;">Commands for VS Code extension development.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/fix</code></td>
+<td style="text-align: left;">Propose a fix for the problems in the selected code.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/help</code></td>
+<td style="text-align: left;">Get help about using GitHub Copilot.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/notebook</code></td>
+<td style="text-align: left;">Commands for working with Jupyter Notebooks.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/tests</code></td>
+<td style="text-align: left;">Generate unit tests for the selected code.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/vscode</code></td>
+<td style="text-align: left;">Commands for VS Code specific questions.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="05-builtin-prompts-exercises">Exercises<a class="headerlink" href="#05-builtin-prompts-exercises" title="Permanent link">&para;</a></h2>
+<h3 id="05-builtin-prompts-1-explain-code">1. Explain Code<a class="headerlink" href="#05-builtin-prompts-1-explain-code" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open <code>calculator/calculator.py</code>.</li>
+<li>Select the <code>divide</code> function.</li>
+<li>Open the Chat view and type <code>/explain</code>.</li>
+<li>Review the explanation provided by Copilot.</li>
+</ol>
+<h3 id="05-builtin-prompts-2-generate-documentation">2. Generate Documentation<a class="headerlink" href="#05-builtin-prompts-2-generate-documentation" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select the <code>subtract</code> function in <code>calculator/calculator.py</code>.</li>
+<li>Type <code>/doc</code> in the Chat or right-click and select <strong>Copilot &gt; Generate Docs</strong>.</li>
+<li>Observe how Copilot adds docstrings to your function.</li>
+</ol>
+<h3 id="05-builtin-prompts-3-generate-tests">3. Generate Tests<a class="headerlink" href="#05-builtin-prompts-3-generate-tests" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select the entire content of <code>calculator/calculator.py</code>.</li>
+<li>Type <code>/tests</code> in the Chat.</li>
+<li>Copilot will suggest a new test file or add tests to an existing one.</li>
+<li>Review the generated tests and ensure they cover edge cases (like division by zero).</li>
+</ol></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #welcome h2:before { content: '1.' counter(counter-welcome-2) ' ' }
                 .print-site-enumerate-headings #welcome h2 {  counter-reset: counter-welcome-3 ;  counter-increment: counter-welcome-2 }
@@ -946,6 +1111,16 @@
 
                 .print-site-enumerate-headings #03-inline-chat h2:before { content: '2.4.' counter(counter-03-inline-chat-2) ' ' }
                 .print-site-enumerate-headings #03-inline-chat h2 {  counter-increment: counter-03-inline-chat-2 }
+            
+.print-site-enumerate-headings #04-chat > h1:before { content: '2.5 ' }
+
+                .print-site-enumerate-headings #04-chat h2:before { content: '2.5.' counter(counter-04-chat-2) ' ' }
+                .print-site-enumerate-headings #04-chat h2 {  counter-increment: counter-04-chat-2 }
+            
+.print-site-enumerate-headings #05-builtin-prompts > h1:before { content: '2.6 ' }
+
+                .print-site-enumerate-headings #05-builtin-prompts h2:before { content: '2.6.' counter(counter-05-builtin-prompts-2) ' ' }
+                .print-site-enumerate-headings #05-builtin-prompts h2 {  counter-increment: counter-05-builtin-prompts-2 }
             </style>
 <!--
   Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
@@ -1159,7 +1334,7 @@
       
         <script src="../js/print-site.js"></script>
       
-        <script src="https://buttons.github.io/buttons.js?v=1766239463"></script>
+        <script src="https://buttons.github.io/buttons.js?v=1766241639"></script>
       
     
   </body>
