@@ -60,7 +60,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766233725">
+      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766239463">
     
     <script>__md_scope=new URL("/Copilot-Prompts-Workshop/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -684,7 +684,7 @@
 <hr />
 <h2 id="welcome-ready-to-begin">Ready to Begin?<a class="headerlink" href="#welcome-ready-to-begin" title="Permanent link">&para;</a></h2>
 <div class="center">
-<p><a class="md-button md-button--primary" href="#welcome-labs-01-setup.md">Get Started →</a></p>
+<p><a class="md-button md-button--primary" href="#01-setup">Get Started →</a></p>
 </div></section>
                     <section class='print-page md-section' id='section-2' heading-number='2'>
                         <h1>Labs<a class='headerlink' href='#section-2' title='Permanent link'></a>
@@ -746,7 +746,7 @@
 </span></code></pre></div>
 </div>
 </div>
-</div></section><section class="print-page" id="02-foundations" heading-number="2.3"><h1 id="02-foundations-workshop-foundations">Workshop Foundations<a class="headerlink" href="#02-foundations-workshop-foundations" title="Permanent link">&para;</a></h1>
+</div>
 <ul>
 <li>In this lab, you will set up the basic code skeleton for the Copilot Prompting Workshop. </li>
 <li>This includes creating the necessary files as we progress along the labs.</li>
@@ -756,7 +756,7 @@
 <p>The lab is based upon creating a simple Calculator in Python with the help of <code>GitHub Copilot prompts</code>. </p>
 </div>
 <hr />
-<h2 id="02-foundations-01-create-project-structure">01 - Create Project Structure<a class="headerlink" href="#02-foundations-01-create-project-structure" title="Permanent link">&para;</a></h2>
+<h2 id="01-setup-04-create-project-structure">04 - Create Project Structure<a class="headerlink" href="#01-setup-04-create-project-structure" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>Create a new directory named <code>calculator</code> in your workshop folder.</p>
@@ -768,23 +768,20 @@
 <p><code>calculator.py</code> - This will be the main module for our calculator functions.</p>
 <ul>
 <li>Inside <code>calculator.py</code> and add the following starter code:
-    <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#02-foundations-__codelineno-0-1"></a><span class="c1"># calculator.py</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#02-foundations-__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#02-foundations-__codelineno-0-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.&quot;&quot;&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#02-foundations-__codelineno-0-4"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#01-setup-__codelineno-5-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#01-setup-__codelineno-5-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#01-setup-__codelineno-5-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.&quot;&quot;&quot;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#01-setup-__codelineno-5-4"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 </span></code></pre></div></li>
 <li>Your project structure should look like this:
-  <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#02-foundations-__codelineno-1-1"></a>Copilot-Prompts-Workshop/
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#02-foundations-__codelineno-1-2"></a>├── calculator/
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#02-foundations-__codelineno-1-3"></a>│   └── calculator.py
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#01-setup-__codelineno-6-1"></a>Copilot-Prompts-Workshop/
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#01-setup-__codelineno-6-2"></a>├── calculator/
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#01-setup-__codelineno-6-3"></a>│   └── calculator.py
 </span></code></pre></div></li>
 </ul>
 </li>
-</ul>
-<hr />
-<h2 data-depth="4">Using GitHub Copilot</h2>
-
-<h2 id="02-foundations-02-use-inline-suggestion">02 - Use Inline Suggestion<a class="headerlink" href="#02-foundations-02-use-inline-suggestion" title="Permanent link">&para;</a></h2>
+</ul></section><section class="print-page" id="02-suggestions-inline" heading-number="2.3"><h1 id="02-suggestions-inline-inline-suggestion-lab">Inline Suggestion Lab<a class="headerlink" href="#02-suggestions-inline-inline-suggestion-lab" title="Permanent link">&para;</a></h1>
+<h2 id="02-suggestions-inline-01-single-inline-suggestion">01 - Single Inline Suggestion<a class="headerlink" href="#02-suggestions-inline-01-single-inline-suggestion" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>In this step, we will use <code>GitHub Copilot</code> to help us add a new function to our calculator.</p>
@@ -799,7 +796,7 @@
 <ul>
 <li>Place your cursor below the <code>add</code> function.</li>
 <li>Type a comment describing the function you want to create:
-    <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#02-foundations-__codelineno-2-1"></a><span class="c1"># Add function to subtract two numbers</span>
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#02-suggestions-inline-__codelineno-0-1"></a><span class="c1"># Add function to subtract two numbers</span>
 </span></code></pre></div></li>
 <li>Wait for <code>GitHub Copilot</code> to suggest the implementation of the <code>subtract</code> function.</li>
 <li>Accept the suggestion by pressing <code>Tab</code> or <code>Enter</code>.</li>
@@ -808,19 +805,120 @@
 </li>
 <li>
 <p>After adding the function, your <code>calculator.py</code> should look like this:
-    <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#02-foundations-__codelineno-3-1"></a><span class="c1"># calculator.py</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#02-foundations-__codelineno-3-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#02-foundations-__codelineno-3-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.&quot;&quot;&quot;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#02-foundations-__codelineno-3-4"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#02-foundations-__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#02-foundations-__codelineno-3-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#02-foundations-__codelineno-3-7"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Subtract two numbers.&quot;&quot;&quot;</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#02-foundations-__codelineno-3-8"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#02-suggestions-inline-__codelineno-1-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#02-suggestions-inline-__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#02-suggestions-inline-__codelineno-1-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.&quot;&quot;&quot;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#02-suggestions-inline-__codelineno-1-4"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#02-suggestions-inline-__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#02-suggestions-inline-__codelineno-1-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#02-suggestions-inline-__codelineno-1-7"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Subtract two numbers.&quot;&quot;&quot;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#02-suggestions-inline-__codelineno-1-8"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
 </span></code></pre></div></p>
 </li>
 </ul>
 <hr />
-<h2 id="02-foundations-02-use-inline-suggestion_1">02 - Use Inline Suggestion<a class="headerlink" href="#02-foundations-02-use-inline-suggestion_1" title="Permanent link">&para;</a></h2></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
+<h2 id="02-suggestions-inline-02-multiple-inline-suggestion">02 - Multiple Inline Suggestion<a class="headerlink" href="#02-suggestions-inline-02-multiple-inline-suggestion" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Now, Based upon what we used above, add 2 more methods for multiply and divide.</p>
+</li>
+<li>
+<p>Use <code>GitHub Copilot</code> to help you add a new function <code>multiply(x, y)</code> that multiplies two numbers.</p>
+</li>
+<li>Use <code>GitHub Copilot</code> to help you add a new function <code>divide(x, y)</code> that divides two numbers.</li>
+<li>
+<p><strong>This time we will add both functions together.</strong></p>
+<div class="admonition debug">
+<p class="admonition-title">Using GitHub Copilot to add multiply and divide functions</p>
+<ul>
+<li>Place your cursor below the <code>subtract</code> function.</li>
+<li>Type a comment describing the function you want to create:
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#02-suggestions-inline-__codelineno-2-1"></a><span class="c1"># Add function to multiply two numbers</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#02-suggestions-inline-__codelineno-2-2"></a><span class="c1"># Add function to divide two numbers</span>
+</span></code></pre></div></li>
+<li>Wait for <code>GitHub Copilot</code> to suggest the implementation of the <code>multiply</code> and <code>divide</code> functions.</li>
+<li>Accept the suggestion by pressing <code>Tab</code> or <code>Enter</code>.</li>
+</ul>
+</div>
+</li>
+<li>
+<p>After adding the functions, your <code>calculator.py</code> should look like this:
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#02-suggestions-inline-__codelineno-3-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#02-suggestions-inline-__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#02-suggestions-inline-__codelineno-3-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#02-suggestions-inline-__codelineno-3-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#02-suggestions-inline-__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#02-suggestions-inline-__codelineno-3-6"></a><span class="c1"># Add subtract function</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#02-suggestions-inline-__codelineno-3-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#02-suggestions-inline-__codelineno-3-8"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#02-suggestions-inline-__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#02-suggestions-inline-__codelineno-3-10"></a><span class="c1"># Add function to multiply two numbers</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#02-suggestions-inline-__codelineno-3-11"></a><span class="c1"># Add function to divide two numbers</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#02-suggestions-inline-__codelineno-3-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#02-suggestions-inline-__codelineno-3-13"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#02-suggestions-inline-__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#02-suggestions-inline-__codelineno-3-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#02-suggestions-inline-__codelineno-3-16"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#02-suggestions-inline-__codelineno-3-17"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#02-suggestions-inline-__codelineno-3-18"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>If the code does not match, for example the divide by zero check is missing, we will handle it in the next lab.  </p>
+</li>
+<li>Congratulations! <ul>
+<li>You have successfully used GitHub Copilot to add multiple functions to your calculator using inline suggestions.</li>
+</ul>
+</li>
+</ul></section><section class="print-page" id="03-inline-chat" heading-number="2.4"><h1 id="03-inline-chat-lab-03-github-copilot-inline-chat">Lab 03: GitHub Copilot Inline Chat<a class="headerlink" href="#03-inline-chat-lab-03-github-copilot-inline-chat" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In this lab, we will explore the <strong>Inline Chat</strong> feature of GitHub Copilot.</li>
+</ul>
+<h2 id="03-inline-chat-overview">Overview<a class="headerlink" href="#03-inline-chat-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Inline Chat allows you to ask Copilot to generate code, refactor existing code, or explain code directly within the editor, without switching to a separate chat window.</li>
+<li>This feature enhances productivity by providing context-aware assistance right where you need it.</li>
+<li>You will learn how to effectively use Inline Chat to improve your coding workflow.</li>
+</ul>
+<hr />
+<p><img src="../assets/images/tldr.png" alt="Inline Chat Overview" style="width:100px; border-radius:25px;"/></p>
+<ol>
+<li><strong>Open Inline Chat</strong>.</li>
+<li><strong>Generate Code</strong>. </li>
+<li><strong>Refactor Code</strong>.</li>
+</ol>
+<hr />
+<h2 id="03-inline-chat-steps-to-use-inline-chat">Steps to Use Inline Chat<a class="headerlink" href="#03-inline-chat-steps-to-use-inline-chat" title="Permanent link">&para;</a></h2>
+<h3 id="03-inline-chat-01-open-inline-chat">01. Open Inline Chat:<a class="headerlink" href="#03-inline-chat-01-open-inline-chat" title="Permanent link">&para;</a></h3>
+<ul>
+<li>This can be done in several ways.<ul>
+<li>Press <code>Cmd+I</code> (macOS) or <code>Ctrl+I</code> (Windows/Linux).</li>
+<li>Use the Icon from the <code>Github Copilot</code> top icon.</li>
+<li>Right-click in the editor and select <code>GitHub Copilot: Open Inline Chat</code>. </li>
+</ul>
+</li>
+<li>Once the Inline Chat panel is open, you can type your request in the input box at the bottom.</li>
+</ul>
+<hr />
+<h3 id="03-inline-chat-02-use-inline-chat">02. Use Inline Chat<a class="headerlink" href="#03-inline-chat-02-use-inline-chat" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Mark the multiply function in the code editor.</li>
+<li>Open Inline Chat using one of the methods described above.</li>
+<li>
+<p>In the Inline Chat input box, Here are few example prompts you can use:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#03-inline-chat-__codelineno-0-1"></a>Refactor this function to use arrow function syntax.
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#03-inline-chat-__codelineno-1-1"></a>Explain what this function does.
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#03-inline-chat-__codelineno-2-1"></a>Add documentation comments to this function.
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="03-inline-chat-03-tasks">03. Tasks:<a class="headerlink" href="#03-inline-chat-03-tasks" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use the inline Chat to add code which will verify that the divided function does not divide by 0.</li>
+<li>Add comments to the the functions.</li>
+</ul></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #welcome h2:before { content: '1.' counter(counter-welcome-2) ' ' }
                 .print-site-enumerate-headings #welcome h2 {  counter-reset: counter-welcome-3 ;  counter-increment: counter-welcome-2 }
@@ -839,10 +937,15 @@
                 .print-site-enumerate-headings #01-setup h2:before { content: '2.2.' counter(counter-01-setup-2) ' ' }
                 .print-site-enumerate-headings #01-setup h2 {  counter-increment: counter-01-setup-2 }
             
-.print-site-enumerate-headings #02-foundations > h1:before { content: '2.3 ' }
+.print-site-enumerate-headings #02-suggestions-inline > h1:before { content: '2.3 ' }
 
-                .print-site-enumerate-headings #02-foundations h2:before { content: '2.3.' counter(counter-02-foundations-2) ' ' }
-                .print-site-enumerate-headings #02-foundations h2 {  counter-increment: counter-02-foundations-2 }
+                .print-site-enumerate-headings #02-suggestions-inline h2:before { content: '2.3.' counter(counter-02-suggestions-inline-2) ' ' }
+                .print-site-enumerate-headings #02-suggestions-inline h2 {  counter-increment: counter-02-suggestions-inline-2 }
+            
+.print-site-enumerate-headings #03-inline-chat > h1:before { content: '2.4 ' }
+
+                .print-site-enumerate-headings #03-inline-chat h2:before { content: '2.4.' counter(counter-03-inline-chat-2) ' ' }
+                .print-site-enumerate-headings #03-inline-chat h2 {  counter-increment: counter-03-inline-chat-2 }
             </style>
 <!--
   Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
@@ -1056,7 +1159,7 @@
       
         <script src="../js/print-site.js"></script>
       
-        <script src="https://buttons.github.io/buttons.js?v=1766233725"></script>
+        <script src="https://buttons.github.io/buttons.js?v=1766239463"></script>
       
     
   </body>
