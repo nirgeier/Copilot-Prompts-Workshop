@@ -60,7 +60,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766276092">
+      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766342321">
     
     <script>__md_scope=new URL("/Copilot-Prompts-Workshop/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -398,6 +398,28 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../assets/calculator-code/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Assets
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -533,6 +555,76 @@
   
   <span class="md-ellipsis">
     Labs
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../assets/calculator-code/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Assets
     
   </span>
   
@@ -779,6 +871,20 @@
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#01-setup-__codelineno-6-3"></a>│   └── calculator.py
 </span></code></pre></div></li>
 </ul>
+<hr />
+</li>
+</ul>
+<h2 id="01-setup-05-install-required-extensions">05 - Install Required Extensions<a class="headerlink" href="#01-setup-05-install-required-extensions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>install the following Python Packages:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#01-setup-__codelineno-7-1"></a><span class="c1"># Create the .venv as explaind above if you haven&#39;t already.</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#01-setup-__codelineno-7-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">   </span><span class="c1"># or the appropriate command for your OS</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#01-setup-__codelineno-7-3"></a>pip<span class="w"> </span>install<span class="w"> </span>uv
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#01-setup-__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#01-setup-__codelineno-7-5"></a><span class="c1"># Will be used in later labs</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#01-setup-__codelineno-7-6"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pytest<span class="w">    </span>
+</span></code></pre></div>
 </li>
 </ul></section><section class="print-page" id="02-suggestions-inline" heading-number="2.3"><h1 id="02-suggestions-inline-lab-02-inline-suggestions">Lab 02 - Inline Suggestions<a class="headerlink" href="#02-suggestions-inline-lab-02-inline-suggestions" title="Permanent link">&para;</a></h1>
 <h2 id="02-suggestions-inline-01-single-inline-suggestion">01 - Single Inline Suggestion<a class="headerlink" href="#02-suggestions-inline-01-single-inline-suggestion" title="Permanent link">&para;</a></h2>
@@ -944,14 +1050,16 @@
 <ul>
 <li>Mark the multiply function in the code editor.</li>
 <li>Open Inline Chat using one of the methods described above.</li>
-<li>In the Inline Chat input box, Here are few example prompts you can use:</li>
-</ul>
+<li>
+<p>In the Inline Chat input box, Here are few example prompts you can use:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#03-inline-chat-__codelineno-0-1"></a>Refactor this function to use arrow function syntax.
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#03-inline-chat-__codelineno-1-1"></a>Explain what this function does.
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#03-inline-chat-__codelineno-2-1"></a>Add documentation comments to this function.
 </span></code></pre></div>
+</li>
+</ul>
 <hr />
 <h3 id="03-inline-chat-03-task-improve-code-quality">03. Task: Improve Code Quality<a class="headerlink" href="#03-inline-chat-03-task-improve-code-quality" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1290,7 +1398,15 @@
 <ul>
 <li>In this lab, we will explore <strong>Plan Mode</strong>, a powerful feature that allows GitHub Copilot to <strong>analyze complex requests</strong> and <strong>propose</strong> structured plans before implementation.</li>
 <li>This is particularly useful for architectural changes, refactoring, or implementing large features.</li>
+<li><code>Github Copilot</code> Plan Mode is a <strong>premium feature</strong> and may not be available in all accounts.</li>
+<li><code>Github Copilot</code> Plan Mode requires enabling in settings.</li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">plan Mode</p>
+<ul>
+<li><code>Github Copilot</code> Plan Mode <strong>DOES NOT</strong> work with Agent mode, you need to update the code manually based on the plan provided.</li>
+</ul>
+</div>
 <h2 id="06-plan-mode-overview">Overview<a class="headerlink" href="#06-plan-mode-overview" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -1363,15 +1479,775 @@
     <img src="../assets/images/plan-mode-agent-1.png" style="max-width: 800px;"></p>
 </li>
 <li>
-<p>Open <code>calculator/calculator.py</code> and confirm that the functions are now methods within a <code>Calculator</code> class.</p>
+<p>Open <code>calculator/calculator.py</code> copy the code from the planning and confirm that the functions are now methods within a <code>Calculator</code> class.</p>
 </li>
 <li>Check <code>calculator/main.py</code> to see how the <code>Calculator</code> class is instantiated and used.</li>
+<li>Run the application or tests to ensure the refactor didn&rsquo;t break existing functionality.</li>
 <li>
-<p>Run the application or tests to ensure the refactor didn&rsquo;t break existing functionality.</p>
+<p>Make sure that the code is working with decimal numbers as well.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#06-plan-mode-__codelineno-1-1"></a>python3<span class="w"> </span>calculator/main.py
 </span></code></pre></div>
+<p><details>
+<summary>Expected Output</summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#06-plan-mode-__codelineno-2-1"></a><span class="c1">### This line will not work, as the code is now class based.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#06-plan-mode-__codelineno-2-2"></a><span class="c1">### You need to install pytest to run the tests.</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#06-plan-mode-__codelineno-2-3"></a><span class="c1">### Use Github copilot to &quot;fix&quot; it for you so the code will </span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#06-plan-mode-__codelineno-2-4"></a><span class="c1">### works with the new class based calculator.</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#06-plan-mode-__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#06-plan-mode-__codelineno-2-6"></a><span class="c1">### ERROR:</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#06-plan-mode-__codelineno-2-7"></a><span class="c1">###</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#06-plan-mode-__codelineno-2-8"></a><span class="c1">### Traceback (most recent call last):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#06-plan-mode-__codelineno-2-9"></a><span class="c1">### File &quot;.../main.py&quot;, line 1, in &lt;module&gt;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#06-plan-mode-__codelineno-2-10"></a><span class="c1">###   import pytest</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#06-plan-mode-__codelineno-2-11"></a><span class="c1">### ModuleNotFoundError: No module named &#39;pytest&#39;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#06-plan-mode-__codelineno-2-12"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#06-plan-mode-__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#06-plan-mode-__codelineno-2-14"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#06-plan-mode-__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#06-plan-mode-__codelineno-2-16"></a><span class="k">class</span><span class="w"> </span><span class="nc">TestCalculator</span><span class="p">:</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#06-plan-mode-__codelineno-2-17"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">test_add_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#06-plan-mode-__codelineno-2-18"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#06-plan-mode-__codelineno-2-19"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">6.0</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#06-plan-mode-__codelineno-2-20"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#06-plan-mode-__codelineno-2-21"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#06-plan-mode-__codelineno-2-22"></a>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#06-plan-mode-__codelineno-2-23"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">test_subtract_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#06-plan-mode-__codelineno-2-24"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#06-plan-mode-__codelineno-2-25"></a>        <span class="c1"># 10 - 2 - 3 = 5</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#06-plan-mode-__codelineno-2-26"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">5.0</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#06-plan-mode-__codelineno-2-27"></a>        <span class="c1"># 10 - (-2) = 12</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#06-plan-mode-__codelineno-2-28"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">12.0</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#06-plan-mode-__codelineno-2-29"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">5.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">5.0</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#06-plan-mode-__codelineno-2-30"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span></code></pre></div>
+</details></p>
 </li>
-</ul></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
+</ul>
+<hr />
+<h3 id="06-plan-mode-3-planning-documentation-strategy">3. Planning Documentation Strategy<a class="headerlink" href="#06-plan-mode-3-planning-documentation-strategy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use Plan Mode to help plan the documentation strategy for the calculator project.</li>
+<li>
+<p>In the Copilot Chat choose <code>Plan</code> and enter the following prompt:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#06-plan-mode-__codelineno-3-1"></a>&quot;Plan a documentation strategy for my calculator project. 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#06-plan-mode-__codelineno-3-2"></a>What should be documented 
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#06-plan-mode-__codelineno-3-3"></a>and how? Consider docstrings, README, and usage examples.&quot;
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Review the proposed documentation plan and implement the suggestions.</p>
+</li>
+<li>Update the <code>calculator/calculator.py</code> file with appropriate docstrings for the class and its methods.</li>
+<li>Create or update the <code>README.md</code> file in the project root with usage examples and explanations based on the plan provided by Copilot.</li>
+</ul></section><section class="print-page" id="08-agent-mode-part02" heading-number="2.9"><h1 id="08-agent-mode-part02-lab-08-building-a-cli-with-copilot-agent">Lab 08 - Building a CLI with Copilot Agent<a class="headerlink" href="#08-agent-mode-part02-lab-08-building-a-cli-with-copilot-agent" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In this lab, we will leverage the power of GitHub Copilot Agent to expand our calculator project. </li>
+<li>We will create a command-line interface (CLI) that interacts with our existing <code>Calculator</code> class. </li>
+<li>This demonstrates how Agent mode can understand project structure (importing existing classes) and implement new functionality (user input handling) based on high-level instructions.</li>
+</ul>
+<h2 id="08-agent-mode-part02-objectives">Objectives<a class="headerlink" href="#08-agent-mode-part02-objectives" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Use Copilot Agent</strong> to generate a new Python script <code>cli_calculator.py</code>.</li>
+<li><strong>Implement an interactive CLI</strong> that prompts users for operations and inputs.</li>
+<li><strong>Integrate</strong> with the existing <code>calculator/calculator.py</code> module.</li>
+<li><strong>Ensure robust error handling</strong> and detailed output logging.</li>
+</ol>
+<hr />
+<h2 id="08-agent-mode-part02-step-by-step-instructions">Step-by-Step Instructions<a class="headerlink" href="#08-agent-mode-part02-step-by-step-instructions" title="Permanent link">&para;</a></h2>
+<h3 id="08-agent-mode-part02-1-create-the-prompt">1. Create the Prompt<a class="headerlink" href="#08-agent-mode-part02-1-create-the-prompt" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Copy and paste the following prompt into Copilot Chat:</strong></p>
+<div class="admonition explorer">
+<p class="admonition-title">Prompt to use in Copilot Chat</p>
+<p>Create a new file <code>cli_calculator.py</code> in the calculator directory. <br />
+This script should import the <code>Calculator</code> class from <code>calculator/calculator.py</code>. <br />
+It should run an interactive loop asking the user to choose an operation (add, subtract, power, modulus) and enter numbers. <br />
+It should print detailed information about the operation being performed and the result. <br />
+Handle invalid inputs gracefully.</p>
+</div>
+</li>
+</ul>
+<hr />
+<h3 id="08-agent-mode-part02-2-review-the-generated-code">2. Review the Generated Code<a class="headerlink" href="#08-agent-mode-part02-2-review-the-generated-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Copilot should generate a plan to create <code>cli_calculator.py</code>. </p>
+<p><details>
+<summary>Cli Calculator - Review Generated Code</summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#08-agent-mode-part02-__codelineno-0-1"></a>    <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#08-agent-mode-part02-__codelineno-0-2"></a>    <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#08-agent-mode-part02-__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#08-agent-mode-part02-__codelineno-0-4"></a>    <span class="c1"># Add the current directory to sys.path to ensure we can import the local module</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#08-agent-mode-part02-__codelineno-0-5"></a>    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#08-agent-mode-part02-__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#08-agent-mode-part02-__codelineno-0-7"></a>    <span class="kn">from</span><span class="w"> </span><span class="nn">calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#08-agent-mode-part02-__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#08-agent-mode-part02-__codelineno-0-9"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_numbers_list</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#08-agent-mode-part02-__codelineno-0-10"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get a list of numbers from user input.&quot;&quot;&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#08-agent-mode-part02-__codelineno-0-11"></a>        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#08-agent-mode-part02-__codelineno-0-12"></a>            <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#08-agent-mode-part02-__codelineno-0-13"></a>                <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#08-agent-mode-part02-__codelineno-0-14"></a>                <span class="c1"># Split by comma or space</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#08-agent-mode-part02-__codelineno-0-15"></a>                <span class="n">parts</span> <span class="o">=</span> <span class="n">user_input</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#08-agent-mode-part02-__codelineno-0-16"></a>                <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">]</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#08-agent-mode-part02-__codelineno-0-17"></a>                <span class="k">return</span> <span class="n">numbers</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#08-agent-mode-part02-__codelineno-0-18"></a>            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#08-agent-mode-part02-__codelineno-0-19"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please enter numeric values separated by spaces or commas.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#08-agent-mode-part02-__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#08-agent-mode-part02-__codelineno-0-21"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_number</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#08-agent-mode-part02-__codelineno-0-22"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get a single number from user input.&quot;&quot;&quot;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#08-agent-mode-part02-__codelineno-0-23"></a>        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#08-agent-mode-part02-__codelineno-0-24"></a>            <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#08-agent-mode-part02-__codelineno-0-25"></a>                <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">))</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#08-agent-mode-part02-__codelineno-0-26"></a>            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#08-agent-mode-part02-__codelineno-0-27"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please enter a numeric value.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#08-agent-mode-part02-__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#08-agent-mode-part02-__codelineno-0-29"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#08-agent-mode-part02-__codelineno-0-30"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#08-agent-mode-part02-__codelineno-0-31"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome to the CLI Calculator!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#08-agent-mode-part02-__codelineno-0-32"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Available operations: add, subtract, power, modulus&quot;</span><span class="p">)</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#08-agent-mode-part02-__codelineno-0-33"></a>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#08-agent-mode-part02-__codelineno-0-34"></a>        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#08-agent-mode-part02-__codelineno-0-35"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">----------------------------------------&quot;</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#08-agent-mode-part02-__codelineno-0-36"></a>            <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter operation (or &#39;quit&#39; to exit): &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#08-agent-mode-part02-__codelineno-0-37"></a>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#08-agent-mode-part02-__codelineno-0-38"></a>            <span class="k">if</span> <span class="n">operation</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;quit&#39;</span><span class="p">,</span> <span class="s1">&#39;exit&#39;</span><span class="p">]:</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#08-agent-mode-part02-__codelineno-0-39"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Goodbye!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#08-agent-mode-part02-__codelineno-0-40"></a>                <span class="k">break</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#08-agent-mode-part02-__codelineno-0-41"></a>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#08-agent-mode-part02-__codelineno-0-42"></a>            <span class="k">if</span> <span class="n">operation</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;add&#39;</span><span class="p">,</span> <span class="s1">&#39;subtract&#39;</span><span class="p">,</span> <span class="s1">&#39;power&#39;</span><span class="p">,</span> <span class="s1">&#39;modulus&#39;</span><span class="p">]:</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#08-agent-mode-part02-__codelineno-0-43"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Unknown operation. Please choose from: add, subtract, power, modulus&quot;</span><span class="p">)</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#08-agent-mode-part02-__codelineno-0-44"></a>                <span class="k">continue</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#08-agent-mode-part02-__codelineno-0-45"></a>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#08-agent-mode-part02-__codelineno-0-46"></a>            <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#08-agent-mode-part02-__codelineno-0-47"></a>                <span class="k">if</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;add&#39;</span><span class="p">:</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#08-agent-mode-part02-__codelineno-0-48"></a>                    <span class="n">nums</span> <span class="o">=</span> <span class="n">get_numbers_list</span><span class="p">(</span><span class="s2">&quot;Enter numbers separated by spaces: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#08-agent-mode-part02-__codelineno-0-49"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performing addition on </span><span class="si">{</span><span class="n">nums</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#08-agent-mode-part02-__codelineno-0-50"></a>                    <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#08-agent-mode-part02-__codelineno-0-51"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#08-agent-mode-part02-__codelineno-0-52"></a>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#08-agent-mode-part02-__codelineno-0-53"></a>                <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;subtract&#39;</span><span class="p">:</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#08-agent-mode-part02-__codelineno-0-54"></a>                    <span class="n">nums</span> <span class="o">=</span> <span class="n">get_numbers_list</span><span class="p">(</span><span class="s2">&quot;Enter numbers separated by spaces: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#08-agent-mode-part02-__codelineno-0-55"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performing subtraction on </span><span class="si">{</span><span class="n">nums</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#08-agent-mode-part02-__codelineno-0-56"></a>                    <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#08-agent-mode-part02-__codelineno-0-57"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#08-agent-mode-part02-__codelineno-0-58"></a>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#08-agent-mode-part02-__codelineno-0-59"></a>                <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;power&#39;</span><span class="p">:</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#08-agent-mode-part02-__codelineno-0-60"></a>                    <span class="n">base</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter base: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#08-agent-mode-part02-__codelineno-0-61"></a>                    <span class="n">exponent</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter exponent: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#08-agent-mode-part02-__codelineno-0-62"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Calculating </span><span class="si">{</span><span class="n">base</span><span class="si">}</span><span class="s2"> raised to the power of </span><span class="si">{</span><span class="n">exponent</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#08-agent-mode-part02-__codelineno-0-63"></a>                    <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponent</span><span class="p">)</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#08-agent-mode-part02-__codelineno-0-64"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#08-agent-mode-part02-__codelineno-0-65"></a>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#08-agent-mode-part02-__codelineno-0-66"></a>                <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;modulus&#39;</span><span class="p">:</span>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#08-agent-mode-part02-__codelineno-0-67"></a>                    <span class="n">dividend</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter dividend: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#08-agent-mode-part02-__codelineno-0-68"></a>                    <span class="n">divisor</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter divisor: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#08-agent-mode-part02-__codelineno-0-69"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Calculating modulus of </span><span class="si">{</span><span class="n">dividend</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">divisor</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#08-agent-mode-part02-__codelineno-0-70"></a>                    <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="n">dividend</span><span class="p">,</span> <span class="n">divisor</span><span class="p">)</span>
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#08-agent-mode-part02-__codelineno-0-71"></a>                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#08-agent-mode-part02-__codelineno-0-72"></a>
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#08-agent-mode-part02-__codelineno-0-73"></a>            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#08-agent-mode-part02-__codelineno-0-74"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;An error occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#08-agent-mode-part02-__codelineno-0-75"></a>
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#08-agent-mode-part02-__codelineno-0-76"></a>    <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#08-agent-mode-part02-__codelineno-0-77"></a>        <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div>
+</details></p>
+</li>
+<li>
+<p><strong>Look for the following features in the generated code:</strong></p>
+</li>
+</ul>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Imports</strong></p>
+<ul>
+<li>Does it correctly import <code>sys</code> (for path manipulation if needed) or just <code>from calculator.calculator import Calculator</code>?</li>
+</ul>
+</li>
+<li>
+<p><strong>Input Handling</strong></p>
+<ul>
+<li>Does it ask for the operation first?</li>
+</ul>
+</li>
+<li>
+<p><strong>Argument Handling</strong></p>
+<ul>
+<li>For <code>add</code> and <code>subtract</code>, it should accept a list of numbers (e.g., comma-separated).</li>
+<li>For <code>power</code> and <code>modulus</code>, it should ask for two specific numbers.</li>
+</ul>
+</li>
+<li>
+<p><strong>Loop</strong></p>
+<ul>
+<li>Does it allow the user to perform multiple calculations without restarting?</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="08-agent-mode-part02-3-run-the-calculator-cli">3. Run the Calculator CLI<a class="headerlink" href="#08-agent-mode-part02-3-run-the-calculator-cli" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Once the file is created, run it in the terminal to test it out.</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#08-agent-mode-part02-__codelineno-1-1"></a>python3<span class="w"> </span>cli_calculator.py
+</span></code></pre></div>
+<h3 id="08-agent-mode-part02-4-example-interaction">4. Example Interaction<a class="headerlink" href="#08-agent-mode-part02-4-example-interaction" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#08-agent-mode-part02-__codelineno-2-1"></a>Welcome to the CLI Calculator!
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#08-agent-mode-part02-__codelineno-2-2"></a>Available operations: add, subtract, power, modulus
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#08-agent-mode-part02-__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#08-agent-mode-part02-__codelineno-2-4"></a>Enter operation (or &#39;quit&#39; to exit): add
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#08-agent-mode-part02-__codelineno-2-5"></a>Enter numbers separated by spaces: 10 20 30
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#08-agent-mode-part02-__codelineno-2-6"></a>Performing addition on [10.0, 20.0, 30.0]...
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#08-agent-mode-part02-__codelineno-2-7"></a>Result: 60.0
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#08-agent-mode-part02-__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#08-agent-mode-part02-__codelineno-2-9"></a>Enter operation (or &#39;quit&#39; to exit): power
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#08-agent-mode-part02-__codelineno-2-10"></a>Enter base: 2
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#08-agent-mode-part02-__codelineno-2-11"></a>Enter exponent: 3
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#08-agent-mode-part02-__codelineno-2-12"></a>Calculating 2.0 raised to the power of 3.0...
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#08-agent-mode-part02-__codelineno-2-13"></a>Result: 8.0
+</span></code></pre></div>
+<hr />
+<h2 id="08-agent-mode-part02-detailed-explanation">Detailed Explanation<a class="headerlink" href="#08-agent-mode-part02-detailed-explanation" title="Permanent link">&para;</a></h2>
+<h3 id="08-agent-mode-part02-what-is-happening-behind-the-scenes">What is happening behind the scenes?<a class="headerlink" href="#08-agent-mode-part02-what-is-happening-behind-the-scenes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Context Awareness</strong></td>
+<td style="text-align: left;">By using <code>@workspace</code>, Copilot scans your project structure. <br/>It reads <code>calculator/calculator.py</code> to understand the <code>Calculator</code> class methods (<code>add</code>, <code>subtract</code>, <code>power</code>, <code>modulus</code>) and their specific signatures (e.g., <code>add</code> takes a list, <code>power</code> takes two floats).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Code Generation</strong></td>
+<td style="text-align: left;">Copilot generates the boilerplate code for the command-line interface, including the <code>while</code> loop for continuous operation and <code>input()</code> calls for user interaction.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Logic Mapping</strong></td>
+<td style="text-align: left;">It maps the user&rsquo;s string input (e.g., &ldquo;add&rdquo;) to the specific method call <code>calc.add(...)</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Error Handling</strong></td>
+<td style="text-align: left;">A good agent response will include <code>try-except</code> blocks to handle cases where the user enters text instead of numbers, preventing the program from crashing.</td>
+</tr>
+</tbody>
+</table></section></section>
+                    <section class='print-page md-section' id='section-3' heading-number='3'>
+                        <h1>Assets<a class='headerlink' href='#section-3' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="assets-calculator-code" heading-number="3.1"><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-calculator-code-__codelineno-0-1"></a><span class="sd">&quot;&quot;&quot;Calculator module providing basic operations using a class-based approach.&quot;&quot;&quot;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-calculator-code-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-calculator-code-__codelineno-0-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Calculator</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-calculator-code-__codelineno-0-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;A simple calculator class.&quot;&quot;&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-calculator-code-__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-calculator-code-__codelineno-0-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numbers</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-calculator-code-__codelineno-0-7"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Add a list of numbers.</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-calculator-code-__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-calculator-code-__codelineno-0-9"></a><span class="sd">        Args:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-calculator-code-__codelineno-0-10"></a><span class="sd">            numbers: List of numbers to add.</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-calculator-code-__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-calculator-code-__codelineno-0-12"></a><span class="sd">        Returns:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-calculator-code-__codelineno-0-13"></a><span class="sd">            Sum of the numbers.</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#assets-calculator-code-__codelineno-0-14"></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#assets-calculator-code-__codelineno-0-15"></a>        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#assets-calculator-code-__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#assets-calculator-code-__codelineno-0-17"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numbers</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#assets-calculator-code-__codelineno-0-18"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Subtract numbers from the first number in the list.</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#assets-calculator-code-__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#assets-calculator-code-__codelineno-0-20"></a><span class="sd">        Args:</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#assets-calculator-code-__codelineno-0-21"></a><span class="sd">            numbers: List of numbers.</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#assets-calculator-code-__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#assets-calculator-code-__codelineno-0-23"></a><span class="sd">        Returns:</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#assets-calculator-code-__codelineno-0-24"></a><span class="sd">            Result of subtracting subsequent numbers from the first.</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#assets-calculator-code-__codelineno-0-25"></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#assets-calculator-code-__codelineno-0-26"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">numbers</span><span class="p">:</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#assets-calculator-code-__codelineno-0-27"></a>            <span class="k">return</span> <span class="mf">0.0</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#assets-calculator-code-__codelineno-0-28"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#assets-calculator-code-__codelineno-0-29"></a>            <span class="k">return</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#assets-calculator-code-__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#assets-calculator-code-__codelineno-0-31"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#assets-calculator-code-__codelineno-0-32"></a>        <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#assets-calculator-code-__codelineno-0-33"></a>            <span class="n">result</span> <span class="o">-=</span> <span class="n">num</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#assets-calculator-code-__codelineno-0-34"></a>        <span class="k">return</span> <span class="n">result</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#assets-calculator-code-__codelineno-0-35"></a>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#assets-calculator-code-__codelineno-0-36"></a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#assets-calculator-code-__codelineno-0-37"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Run calculator with user input.&quot;&quot;&quot;</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#assets-calculator-code-__codelineno-0-38"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#assets-calculator-code-__codelineno-0-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Simple Calculator (Class-based)&quot;</span><span class="p">)</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#assets-calculator-code-__codelineno-0-40"></a>    <span class="c1"># Simple demo</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#assets-calculator-code-__codelineno-0-41"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adding [1, 2, 3]:&quot;</span><span class="p">,</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#assets-calculator-code-__codelineno-0-42"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Subtracting [10, 2, 3]:&quot;</span><span class="p">,</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#assets-calculator-code-__codelineno-0-43"></a>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#assets-calculator-code-__codelineno-0-44"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#assets-calculator-code-__codelineno-0-45"></a>    <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div></section><section class="print-page" id="assets-calculator-tests" heading-number="3.2"><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-calculator-tests-__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-calculator-tests-__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-calculator-tests-__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-calculator-tests-__codelineno-0-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">TestCalculator</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-calculator-tests-__codelineno-0-5"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">test_add_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-calculator-tests-__codelineno-0-6"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-calculator-tests-__codelineno-0-7"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">6.0</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-calculator-tests-__codelineno-0-8"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-calculator-tests-__codelineno-0-9"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-calculator-tests-__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-calculator-tests-__codelineno-0-11"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">test_subtract_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-calculator-tests-__codelineno-0-12"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-calculator-tests-__codelineno-0-13"></a>        <span class="c1"># 10 - 2 - 3 = 5</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#assets-calculator-tests-__codelineno-0-14"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">5.0</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#assets-calculator-tests-__codelineno-0-15"></a>        <span class="c1"># 10 - (-2) = 12</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#assets-calculator-tests-__codelineno-0-16"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">12.0</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#assets-calculator-tests-__codelineno-0-17"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">5.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">5.0</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#assets-calculator-tests-__codelineno-0-18"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#assets-calculator-tests-__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#assets-calculator-tests-__codelineno-0-20"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#assets-calculator-tests-__codelineno-0-21"></a>    <span class="n">test_suite</span> <span class="o">=</span> <span class="n">TestCalculator</span><span class="p">()</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#assets-calculator-tests-__codelineno-0-22"></a>    <span class="n">test_methods</span> <span class="o">=</span> <span class="p">[</span><span class="n">method</span> <span class="k">for</span> <span class="n">method</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">test_suite</span><span class="p">)</span> <span class="k">if</span> <span class="n">method</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;test_&#39;</span><span class="p">)]</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#assets-calculator-tests-__codelineno-0-23"></a>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#assets-calculator-tests-__codelineno-0-24"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">test_methods</span><span class="p">)</span><span class="si">}</span><span class="s2"> tests from TestCalculator...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#assets-calculator-tests-__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#assets-calculator-tests-__codelineno-0-26"></a>    <span class="n">passed_count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#assets-calculator-tests-__codelineno-0-27"></a>    <span class="k">for</span> <span class="n">method_name</span> <span class="ow">in</span> <span class="n">test_methods</span><span class="p">:</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#assets-calculator-tests-__codelineno-0-28"></a>        <span class="n">method</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">test_suite</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#assets-calculator-tests-__codelineno-0-29"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running </span><span class="si">{</span><span class="n">method_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#assets-calculator-tests-__codelineno-0-30"></a>        <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#assets-calculator-tests-__codelineno-0-31"></a>            <span class="n">method</span><span class="p">()</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#assets-calculator-tests-__codelineno-0-32"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ PASSED&quot;</span><span class="p">)</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#assets-calculator-tests-__codelineno-0-33"></a>            <span class="n">passed_count</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#assets-calculator-tests-__codelineno-0-34"></a>        <span class="k">except</span> <span class="ne">AssertionError</span><span class="p">:</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#assets-calculator-tests-__codelineno-0-35"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;❌ FAILED&quot;</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#assets-calculator-tests-__codelineno-0-36"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#assets-calculator-tests-__codelineno-0-37"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ ERROR: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#assets-calculator-tests-__codelineno-0-38"></a>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#assets-calculator-tests-__codelineno-0-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary: </span><span class="si">{</span><span class="n">passed_count</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">test_methods</span><span class="p">)</span><span class="si">}</span><span class="s2"> tests passed.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#assets-calculator-tests-__codelineno-0-40"></a>    <span class="k">if</span> <span class="n">passed_count</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_methods</span><span class="p">):</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#assets-calculator-tests-__codelineno-0-41"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed successfully!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#assets-calculator-tests-__codelineno-0-42"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#assets-calculator-tests-__codelineno-0-43"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Some tests failed. Please check the output above for details.&quot;</span><span class="p">)</span>
+</span></code></pre></div></section><section class="print-page" id="assets-01-setup-assets" heading-number="3.3"><h1 id="assets-01-setup-assets-lab-01-assets">Lab 01 Assets<a class="headerlink" href="#assets-01-setup-assets-lab-01-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-01-setup-assets-virtual-environment">Virtual Environment<a class="headerlink" href="#assets-01-setup-assets-virtual-environment" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-01-setup-assets-__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span></code></pre></div>
+<h2 id="assets-01-setup-assets-activation">Activation<a class="headerlink" href="#assets-01-setup-assets-activation" title="Permanent link">&para;</a></h2>
+<p><strong>Windows (cmd)</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-01-setup-assets-__codelineno-1-1"></a>.venv\Scripts\activate
+</span></code></pre></div></p>
+<p><strong>Windows (PowerShell)</strong>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#assets-01-setup-assets-__codelineno-2-1"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+</span></code></pre></div></p>
+<p><strong>macOS / Linux (bash/zsh)</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#assets-01-setup-assets-__codelineno-3-1"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div></p>
+<p><strong>Git Bash (Windows)</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#assets-01-setup-assets-__codelineno-4-1"></a><span class="nb">source</span><span class="w"> </span>.venv/Scripts/activate
+</span></code></pre></div></p>
+<h2 id="assets-01-setup-assets-calculator-starter-code">Calculator Starter Code<a class="headerlink" href="#assets-01-setup-assets-calculator-starter-code" title="Permanent link">&para;</a></h2>
+<p><code>calculator/calculator.py</code></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#assets-01-setup-assets-__codelineno-5-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#assets-01-setup-assets-__codelineno-5-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#assets-01-setup-assets-__codelineno-5-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.&quot;&quot;&quot;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#assets-01-setup-assets-__codelineno-5-4"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span></code></pre></div>
+<h2 id="assets-01-setup-assets-install-extensions">Install Extensions<a class="headerlink" href="#assets-01-setup-assets-install-extensions" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#assets-01-setup-assets-__codelineno-6-1"></a><span class="c1"># Create the .venv as explaind above if you haven&#39;t already.</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#assets-01-setup-assets-__codelineno-6-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">   </span><span class="c1"># or the appropriate command for your OS</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#assets-01-setup-assets-__codelineno-6-3"></a>pip<span class="w"> </span>install<span class="w"> </span>uv
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#assets-01-setup-assets-__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#assets-01-setup-assets-__codelineno-6-5"></a><span class="c1"># Will be used in later labs</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#assets-01-setup-assets-__codelineno-6-6"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pytest<span class="w">    </span>
+</span></code></pre></div></section><section class="print-page" id="assets-02-suggestions-inline-assets" heading-number="3.4"><h1 id="assets-02-suggestions-inline-assets-lab-02-assets">Lab 02 Assets<a class="headerlink" href="#assets-02-suggestions-inline-assets-lab-02-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-02-suggestions-inline-assets-subtract-function">Subtract Function<a class="headerlink" href="#assets-02-suggestions-inline-assets-subtract-function" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-02-suggestions-inline-assets-__codelineno-0-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-02-suggestions-inline-assets-__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-02-suggestions-inline-assets-__codelineno-0-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.&quot;&quot;&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-02-suggestions-inline-assets-__codelineno-0-4"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-02-suggestions-inline-assets-__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-02-suggestions-inline-assets-__codelineno-0-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-02-suggestions-inline-assets-__codelineno-0-7"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Subtract two numbers.&quot;&quot;&quot;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-02-suggestions-inline-assets-__codelineno-0-8"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+</span></code></pre></div>
+<h2 id="assets-02-suggestions-inline-assets-multiply-and-divide-functions">Multiply and Divide Functions<a class="headerlink" href="#assets-02-suggestions-inline-assets-multiply-and-divide-functions" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-02-suggestions-inline-assets-__codelineno-1-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#assets-02-suggestions-inline-assets-__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#assets-02-suggestions-inline-assets-__codelineno-1-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#assets-02-suggestions-inline-assets-__codelineno-1-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#assets-02-suggestions-inline-assets-__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#assets-02-suggestions-inline-assets-__codelineno-1-6"></a><span class="c1"># Add subtract function</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#assets-02-suggestions-inline-assets-__codelineno-1-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#assets-02-suggestions-inline-assets-__codelineno-1-8"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#assets-02-suggestions-inline-assets-__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#assets-02-suggestions-inline-assets-__codelineno-1-10"></a><span class="c1"># Add function to multiply two numbers</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#assets-02-suggestions-inline-assets-__codelineno-1-11"></a><span class="c1"># Add function to divide two numbers</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#assets-02-suggestions-inline-assets-__codelineno-1-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#assets-02-suggestions-inline-assets-__codelineno-1-13"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#assets-02-suggestions-inline-assets-__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#assets-02-suggestions-inline-assets-__codelineno-1-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#assets-02-suggestions-inline-assets-__codelineno-1-16"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#assets-02-suggestions-inline-assets-__codelineno-1-17"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero.&quot;</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#assets-02-suggestions-inline-assets-__codelineno-1-18"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span></code></pre></div>
+<h2 id="assets-02-suggestions-inline-assets-power-function">Power Function<a class="headerlink" href="#assets-02-suggestions-inline-assets-power-function" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#assets-02-suggestions-inline-assets-__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">power</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#assets-02-suggestions-inline-assets-__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span>
+</span></code></pre></div></section><section class="print-page" id="assets-03-inline-chat-assets" heading-number="3.5"><h1 id="assets-03-inline-chat-assets-lab-03-assets">Lab 03 Assets<a class="headerlink" href="#assets-03-inline-chat-assets-lab-03-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-03-inline-chat-assets-type-hints">Type Hints<a class="headerlink" href="#assets-03-inline-chat-assets-type-hints" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-03-inline-chat-assets-__codelineno-0-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-03-inline-chat-assets-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-03-inline-chat-assets-__codelineno-0-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-03-inline-chat-assets-__codelineno-0-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-03-inline-chat-assets-__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-03-inline-chat-assets-__codelineno-0-6"></a><span class="c1"># Add subtract function</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-03-inline-chat-assets-__codelineno-0-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-03-inline-chat-assets-__codelineno-0-8"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-03-inline-chat-assets-__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-03-inline-chat-assets-__codelineno-0-10"></a><span class="c1"># Add function to multiply two numbers</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-03-inline-chat-assets-__codelineno-0-11"></a><span class="c1"># Add function to divide two numbers</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-03-inline-chat-assets-__codelineno-0-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-03-inline-chat-assets-__codelineno-0-13"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#assets-03-inline-chat-assets-__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#assets-03-inline-chat-assets-__codelineno-0-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#assets-03-inline-chat-assets-__codelineno-0-16"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#assets-03-inline-chat-assets-__codelineno-0-17"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#assets-03-inline-chat-assets-__codelineno-0-18"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span></code></pre></div>
+<h2 id="assets-03-inline-chat-assets-docstrings">Docstrings<a class="headerlink" href="#assets-03-inline-chat-assets-docstrings" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-03-inline-chat-assets-__codelineno-1-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#assets-03-inline-chat-assets-__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#assets-03-inline-chat-assets-__codelineno-1-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#assets-03-inline-chat-assets-__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#assets-03-inline-chat-assets-__codelineno-1-5"></a><span class="sd">    Args:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#assets-03-inline-chat-assets-__codelineno-1-6"></a><span class="sd">        a: First number.</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#assets-03-inline-chat-assets-__codelineno-1-7"></a><span class="sd">        b: Second number.</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#assets-03-inline-chat-assets-__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#assets-03-inline-chat-assets-__codelineno-1-9"></a><span class="sd">    Returns:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#assets-03-inline-chat-assets-__codelineno-1-10"></a><span class="sd">        The sum of a and b.</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#assets-03-inline-chat-assets-__codelineno-1-11"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#assets-03-inline-chat-assets-__codelineno-1-12"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#assets-03-inline-chat-assets-__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#assets-03-inline-chat-assets-__codelineno-1-14"></a><span class="o">...</span> <span class="p">(</span><span class="n">similar</span> <span class="n">docstrings</span> <span class="k">for</span> <span class="n">other</span> <span class="n">functions</span><span class="p">)</span> <span class="o">...</span>
+</span></code></pre></div>
+<h2 id="assets-03-inline-chat-assets-error-handling">Error Handling<a class="headerlink" href="#assets-03-inline-chat-assets-error-handling" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#assets-03-inline-chat-assets-__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#assets-03-inline-chat-assets-__codelineno-2-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Divide two numbers.</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#assets-03-inline-chat-assets-__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#assets-03-inline-chat-assets-__codelineno-2-4"></a><span class="sd">    Args:</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#assets-03-inline-chat-assets-__codelineno-2-5"></a><span class="sd">        a: Numerator.</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#assets-03-inline-chat-assets-__codelineno-2-6"></a><span class="sd">        b: Denominator.</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#assets-03-inline-chat-assets-__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#assets-03-inline-chat-assets-__codelineno-2-8"></a><span class="sd">    Raises:</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#assets-03-inline-chat-assets-__codelineno-2-9"></a><span class="sd">        ValueError: If b is zero.</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#assets-03-inline-chat-assets-__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#assets-03-inline-chat-assets-__codelineno-2-11"></a><span class="sd">    Returns:</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#assets-03-inline-chat-assets-__codelineno-2-12"></a><span class="sd">        The result of a divided by b.</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#assets-03-inline-chat-assets-__codelineno-2-13"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#assets-03-inline-chat-assets-__codelineno-2-14"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#assets-03-inline-chat-assets-__codelineno-2-15"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero.&quot;</span><span class="p">)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#assets-03-inline-chat-assets-__codelineno-2-16"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span></code></pre></div></section><section class="print-page" id="assets-04-chat-assets" heading-number="3.6"><h1 id="assets-04-chat-assets-lab-04-assets">Lab 04 Assets<a class="headerlink" href="#assets-04-chat-assets-lab-04-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-04-chat-assets-initial-mainpy">Initial main.py<a class="headerlink" href="#assets-04-chat-assets-initial-mainpy" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-04-chat-assets-__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">calculator</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-04-chat-assets-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-04-chat-assets-__codelineno-0-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_add</span><span class="p">():</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-04-chat-assets-__codelineno-0-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the add function.&quot;&quot;&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-04-chat-assets-__codelineno-0-5"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-04-chat-assets-__codelineno-0-6"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-04-chat-assets-__codelineno-0-7"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-04-chat-assets-__codelineno-0-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_add passed&quot;</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-04-chat-assets-__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-04-chat-assets-__codelineno-0-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_subtract</span><span class="p">():</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-04-chat-assets-__codelineno-0-11"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the subtract function.&quot;&quot;&quot;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-04-chat-assets-__codelineno-0-12"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-04-chat-assets-__codelineno-0-13"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">4</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#assets-04-chat-assets-__codelineno-0-14"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#assets-04-chat-assets-__codelineno-0-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_subtract passed&quot;</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#assets-04-chat-assets-__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#assets-04-chat-assets-__codelineno-0-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_multiply</span><span class="p">():</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#assets-04-chat-assets-__codelineno-0-18"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the multiply function.&quot;&quot;&quot;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#assets-04-chat-assets-__codelineno-0-19"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#assets-04-chat-assets-__codelineno-0-20"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">6</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#assets-04-chat-assets-__codelineno-0-21"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#assets-04-chat-assets-__codelineno-0-22"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_multiply passed&quot;</span><span class="p">)</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#assets-04-chat-assets-__codelineno-0-23"></a>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#assets-04-chat-assets-__codelineno-0-24"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_divide</span><span class="p">():</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#assets-04-chat-assets-__codelineno-0-25"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the divide function.&quot;&quot;&quot;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#assets-04-chat-assets-__codelineno-0-26"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#assets-04-chat-assets-__codelineno-0-27"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">2.5</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#assets-04-chat-assets-__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#assets-04-chat-assets-__codelineno-0-29"></a>    <span class="c1"># Test division by zero</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#assets-04-chat-assets-__codelineno-0-30"></a>    <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#assets-04-chat-assets-__codelineno-0-31"></a>        <span class="n">calculator</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#assets-04-chat-assets-__codelineno-0-32"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: ZeroDivisionError not raised&quot;</span><span class="p">)</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#assets-04-chat-assets-__codelineno-0-33"></a>    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#assets-04-chat-assets-__codelineno-0-34"></a>        <span class="k">assert</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Cannot divide by zero.&quot;</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#assets-04-chat-assets-__codelineno-0-35"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_divide passed&quot;</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#assets-04-chat-assets-__codelineno-0-36"></a>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#assets-04-chat-assets-__codelineno-0-37"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#assets-04-chat-assets-__codelineno-0-38"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running tests...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#assets-04-chat-assets-__codelineno-0-39"></a>    <span class="n">test_add</span><span class="p">()</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#assets-04-chat-assets-__codelineno-0-40"></a>    <span class="n">test_subtract</span><span class="p">()</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#assets-04-chat-assets-__codelineno-0-41"></a>    <span class="n">test_multiply</span><span class="p">()</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#assets-04-chat-assets-__codelineno-0-42"></a>    <span class="n">test_divide</span><span class="p">()</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#assets-04-chat-assets-__codelineno-0-43"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="assets-04-chat-assets-updated-calculatorpy-square-and-sqrt">Updated calculator.py (Square and Sqrt)<a class="headerlink" href="#assets-04-chat-assets-updated-calculatorpy-square-and-sqrt" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-04-chat-assets-__codelineno-1-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#assets-04-chat-assets-__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#assets-04-chat-assets-__codelineno-1-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the square of a number.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#assets-04-chat-assets-__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#assets-04-chat-assets-__codelineno-1-5"></a><span class="sd">    Args:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#assets-04-chat-assets-__codelineno-1-6"></a><span class="sd">        n: The number to square.</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#assets-04-chat-assets-__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#assets-04-chat-assets-__codelineno-1-8"></a><span class="sd">    Returns:</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#assets-04-chat-assets-__codelineno-1-9"></a><span class="sd">        The square of n.</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#assets-04-chat-assets-__codelineno-1-10"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#assets-04-chat-assets-__codelineno-1-11"></a>    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#assets-04-chat-assets-__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#assets-04-chat-assets-__codelineno-1-13"></a><span class="k">def</span><span class="w"> </span><span class="nf">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#assets-04-chat-assets-__codelineno-1-14"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the square root of a number.</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#assets-04-chat-assets-__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#assets-04-chat-assets-__codelineno-1-16"></a><span class="sd">    Args:</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#assets-04-chat-assets-__codelineno-1-17"></a><span class="sd">        n: The number to find the square root of.</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#assets-04-chat-assets-__codelineno-1-18"></a>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#assets-04-chat-assets-__codelineno-1-19"></a><span class="sd">    Returns:</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#assets-04-chat-assets-__codelineno-1-20"></a><span class="sd">        The square root of n.</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#assets-04-chat-assets-__codelineno-1-21"></a>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#assets-04-chat-assets-__codelineno-1-22"></a><span class="sd">    Raises:</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#assets-04-chat-assets-__codelineno-1-23"></a><span class="sd">        ValueError: If n is negative.</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#assets-04-chat-assets-__codelineno-1-24"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#assets-04-chat-assets-__codelineno-1-25"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#assets-04-chat-assets-__codelineno-1-26"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot calculate square root of a negative number.&quot;</span><span class="p">)</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#assets-04-chat-assets-__codelineno-1-27"></a>    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="assets-04-chat-assets-updated-mainpy-new-tests">Updated main.py (New Tests)<a class="headerlink" href="#assets-04-chat-assets-updated-mainpy-new-tests" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#assets-04-chat-assets-__codelineno-2-1"></a><span class="c1"># main.py</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#assets-04-chat-assets-__codelineno-2-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_power</span><span class="p">():</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#assets-04-chat-assets-__codelineno-2-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the power function.&quot;&quot;&quot;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#assets-04-chat-assets-__codelineno-2-4"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#assets-04-chat-assets-__codelineno-2-5"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#assets-04-chat-assets-__codelineno-2-6"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.25</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#assets-04-chat-assets-__codelineno-2-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_power passed&quot;</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#assets-04-chat-assets-__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#assets-04-chat-assets-__codelineno-2-9"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_square_root</span><span class="p">():</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#assets-04-chat-assets-__codelineno-2-10"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the square root function.&quot;&quot;&quot;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#assets-04-chat-assets-__codelineno-2-11"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">square_root</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#assets-04-chat-assets-__codelineno-2-12"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">square_root</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#assets-04-chat-assets-__codelineno-2-13"></a>    <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#assets-04-chat-assets-__codelineno-2-14"></a>        <span class="n">calculator</span><span class="o">.</span><span class="n">square_root</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#assets-04-chat-assets-__codelineno-2-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: ValueError not raised for negative input&quot;</span><span class="p">)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#assets-04-chat-assets-__codelineno-2-16"></a>    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#assets-04-chat-assets-__codelineno-2-17"></a>        <span class="k">assert</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Cannot compute square root of negative number.&quot;</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#assets-04-chat-assets-__codelineno-2-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_square_root passed&quot;</span><span class="p">)</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#assets-04-chat-assets-__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#assets-04-chat-assets-__codelineno-2-20"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#assets-04-chat-assets-__codelineno-2-21"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running tests...&quot;</span><span class="p">)</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#assets-04-chat-assets-__codelineno-2-22"></a>    <span class="n">test_add</span><span class="p">()</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#assets-04-chat-assets-__codelineno-2-23"></a>    <span class="n">test_subtract</span><span class="p">()</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#assets-04-chat-assets-__codelineno-2-24"></a>    <span class="n">test_multiply</span><span class="p">()</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#assets-04-chat-assets-__codelineno-2-25"></a>    <span class="n">test_divide</span><span class="p">()</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#assets-04-chat-assets-__codelineno-2-26"></a>    <span class="n">test_power</span><span class="p">()</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#assets-04-chat-assets-__codelineno-2-27"></a>    <span class="n">test_square_root</span><span class="p">()</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#assets-04-chat-assets-__codelineno-2-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed!&quot;</span><span class="p">)</span>
+</span></code></pre></div></section><section class="print-page" id="assets-05-builtin-prompts-assets" heading-number="3.7"><h1 id="assets-05-builtin-prompts-assets-lab-05-assets">Lab 05 Assets<a class="headerlink" href="#assets-05-builtin-prompts-assets-lab-05-assets" title="Permanent link">&para;</a></h1>
+<p>This lab focuses on using built-in slash commands.</p>
+<h2 id="assets-05-builtin-prompts-assets-commands">Commands<a class="headerlink" href="#assets-05-builtin-prompts-assets-commands" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>/clear</code></td>
+<td style="text-align: left;">Clear the session context.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/doc</code></td>
+<td style="text-align: left;">Generate documentation for the selected code.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/explain</code></td>
+<td style="text-align: left;">Explain how the selected code works.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/ext</code></td>
+<td style="text-align: left;">Commands for VS Code extension development.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/fix</code></td>
+<td style="text-align: left;">Propose a fix for the problems in the selected code.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/help</code></td>
+<td style="text-align: left;">Get help about using GitHub Copilot.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/notebook</code></td>
+<td style="text-align: left;">Commands for working with Jupyter Notebooks.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/tests</code></td>
+<td style="text-align: left;">Generate unit tests for the selected code.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>/vscode</code></td>
+<td style="text-align: left;">Commands for VS Code specific questions.</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="assets-06-plan-mode-assets" heading-number="3.8"><h1 id="assets-06-plan-mode-assets-lab-06-assets">Lab 06 Assets<a class="headerlink" href="#assets-06-plan-mode-assets-lab-06-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-06-plan-mode-assets-plan-prompt">Plan Prompt<a class="headerlink" href="#assets-06-plan-mode-assets-plan-prompt" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-06-plan-mode-assets-__codelineno-0-1"></a>Plan a better calculator which will be based upon python 
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-06-plan-mode-assets-__codelineno-0-2"></a>class and will replace the current calculator code.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-06-plan-mode-assets-__codelineno-0-3"></a>The calculator should only support add and subtract, 
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-06-plan-mode-assets-__codelineno-0-4"></a>but will have the ability to pass arguments as a list as well.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-06-plan-mode-assets-__codelineno-0-5"></a>The plan should include the necessary changes to the existing files 
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-06-plan-mode-assets-__codelineno-0-6"></a>and any new files that need to be created.
+</span></code></pre></div>
+<h2 id="assets-06-plan-mode-assets-expected-test-code-class-based">Expected Test Code (Class Based)<a class="headerlink" href="#assets-06-plan-mode-assets-expected-test-code-class-based" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-06-plan-mode-assets-__codelineno-1-1"></a><span class="c1">### This line will not work, as the code is now class based.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#assets-06-plan-mode-assets-__codelineno-1-2"></a><span class="c1">### You need to install pytest to run the tests.</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#assets-06-plan-mode-assets-__codelineno-1-3"></a><span class="c1">### Use Github copilot to &quot;fix&quot; it for you so the code will </span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#assets-06-plan-mode-assets-__codelineno-1-4"></a><span class="c1">### works with the new class based calculator.</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#assets-06-plan-mode-assets-__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#assets-06-plan-mode-assets-__codelineno-1-6"></a><span class="c1">### ERROR:</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#assets-06-plan-mode-assets-__codelineno-1-7"></a><span class="c1">###</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#assets-06-plan-mode-assets-__codelineno-1-8"></a><span class="c1">### Traceback (most recent call last):</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#assets-06-plan-mode-assets-__codelineno-1-9"></a><span class="c1">### File &quot;.../main.py&quot;, line 1, in &lt;module&gt;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#assets-06-plan-mode-assets-__codelineno-1-10"></a><span class="c1">###   import pytest</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#assets-06-plan-mode-assets-__codelineno-1-11"></a><span class="c1">### ModuleNotFoundError: No module named &#39;pytest&#39;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#assets-06-plan-mode-assets-__codelineno-1-12"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#assets-06-plan-mode-assets-__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#assets-06-plan-mode-assets-__codelineno-1-14"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#assets-06-plan-mode-assets-__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#assets-06-plan-mode-assets-__codelineno-1-16"></a><span class="k">class</span><span class="w"> </span><span class="nc">TestCalculator</span><span class="p">:</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#assets-06-plan-mode-assets-__codelineno-1-17"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">test_add_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#assets-06-plan-mode-assets-__codelineno-1-18"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#assets-06-plan-mode-assets-__codelineno-1-19"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">6.0</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#assets-06-plan-mode-assets-__codelineno-1-20"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#assets-06-plan-mode-assets-__codelineno-1-21"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">([</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#assets-06-plan-mode-assets-__codelineno-1-22"></a>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#assets-06-plan-mode-assets-__codelineno-1-23"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">test_subtract_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#assets-06-plan-mode-assets-__codelineno-1-24"></a>        <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#assets-06-plan-mode-assets-__codelineno-1-25"></a>        <span class="c1"># 10 - 2 - 3 = 5</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#assets-06-plan-mode-assets-__codelineno-1-26"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">5.0</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#assets-06-plan-mode-assets-__codelineno-1-27"></a>        <span class="c1"># 10 - (-2) = 12</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#assets-06-plan-mode-assets-__codelineno-1-28"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">12.0</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#assets-06-plan-mode-assets-__codelineno-1-29"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([</span><span class="mf">5.0</span><span class="p">])</span> <span class="o">==</span> <span class="mf">5.0</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#assets-06-plan-mode-assets-__codelineno-1-30"></a>        <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">([])</span> <span class="o">==</span> <span class="mf">0.0</span>
+</span></code></pre></div></section><section class="print-page" id="assets-07-agent-mode-part01-assets" heading-number="3.9"><h1 id="assets-07-agent-mode-part01-assets-lab-07-assets">Lab 07 Assets<a class="headerlink" href="#assets-07-agent-mode-part01-assets-lab-07-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-07-agent-mode-part01-assets-test-file-teststest_advanced_calcpy">Test File: <code>tests/test_advanced_calc.py</code><a class="headerlink" href="#assets-07-agent-mode-part01-assets-test-file-teststest_advanced_calcpy" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-07-agent-mode-part01-assets-__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-07-agent-mode-part01-assets-__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator.calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-07-agent-mode-part01-assets-__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-07-agent-mode-part01-assets-__codelineno-0-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_power</span><span class="p">():</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-07-agent-mode-part01-assets-__codelineno-0-5"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-07-agent-mode-part01-assets-__codelineno-0-6"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-07-agent-mode-part01-assets-__codelineno-0-7"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-07-agent-mode-part01-assets-__codelineno-0-8"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.5</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-07-agent-mode-part01-assets-__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-07-agent-mode-part01-assets-__codelineno-0-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_modulus</span><span class="p">():</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-07-agent-mode-part01-assets-__codelineno-0-11"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-07-agent-mode-part01-assets-__codelineno-0-12"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-07-agent-mode-part01-assets-__codelineno-0-13"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span></code></pre></div>
+<h2 id="assets-07-agent-mode-part01-assets-agent-prompt-1">Agent Prompt 1<a class="headerlink" href="#assets-07-agent-mode-part01-assets-agent-prompt-1" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-07-agent-mode-part01-assets-__codelineno-1-1"></a>I have created a new test file `tests/test_advanced_calc.py` with new tests.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#assets-07-agent-mode-part01-assets-__codelineno-1-2"></a>Please run these tests to confirm they fail, then implement the missing
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#assets-07-agent-mode-part01-assets-__codelineno-1-3"></a>methods in `calculator/calculator.py` to make all tests pass.
+</span></code></pre></div>
+<h2 id="assets-07-agent-mode-part01-assets-agent-prompt-2">Agent Prompt 2<a class="headerlink" href="#assets-07-agent-mode-part01-assets-agent-prompt-2" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#assets-07-agent-mode-part01-assets-__codelineno-2-1"></a>Update the `modulus` method to raise a ValueError if the second argument is 0.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#assets-07-agent-mode-part01-assets-__codelineno-2-2"></a>Also, add a test case to `tests/test_advanced_calc.py` that verifies this exception is raised.
+</span></code></pre></div></section><section class="print-page" id="assets-08-agent-mode-part02-assets" heading-number="3.10"><h1 id="assets-08-agent-mode-part02-assets-lab-08-part-02-assets">Lab 08 Part 02 Assets<a class="headerlink" href="#assets-08-agent-mode-part02-assets-lab-08-part-02-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-08-agent-mode-part02-assets-generated-cli-calculator-code">Generated CLI Calculator Code<a class="headerlink" href="#assets-08-agent-mode-part02-assets-generated-cli-calculator-code" title="Permanent link">&para;</a></h2>
+<p><code>calculator/cli_calculator.py</code></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-08-agent-mode-part02-assets-__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-08-agent-mode-part02-assets-__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-08-agent-mode-part02-assets-__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-08-agent-mode-part02-assets-__codelineno-0-4"></a><span class="c1"># Add the current directory to sys.path to ensure we can import the local module</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-08-agent-mode-part02-assets-__codelineno-0-5"></a><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-08-agent-mode-part02-assets-__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-08-agent-mode-part02-assets-__codelineno-0-7"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-08-agent-mode-part02-assets-__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-08-agent-mode-part02-assets-__codelineno-0-9"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_numbers_list</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-08-agent-mode-part02-assets-__codelineno-0-10"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get a list of numbers from user input.&quot;&quot;&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-08-agent-mode-part02-assets-__codelineno-0-11"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-08-agent-mode-part02-assets-__codelineno-0-12"></a>        <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-08-agent-mode-part02-assets-__codelineno-0-13"></a>            <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#assets-08-agent-mode-part02-assets-__codelineno-0-14"></a>            <span class="c1"># Split by comma or space</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#assets-08-agent-mode-part02-assets-__codelineno-0-15"></a>            <span class="n">parts</span> <span class="o">=</span> <span class="n">user_input</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#assets-08-agent-mode-part02-assets-__codelineno-0-16"></a>            <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">]</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#assets-08-agent-mode-part02-assets-__codelineno-0-17"></a>            <span class="k">return</span> <span class="n">numbers</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#assets-08-agent-mode-part02-assets-__codelineno-0-18"></a>        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#assets-08-agent-mode-part02-assets-__codelineno-0-19"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please enter numeric values separated by spaces or commas.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#assets-08-agent-mode-part02-assets-__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#assets-08-agent-mode-part02-assets-__codelineno-0-21"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_number</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#assets-08-agent-mode-part02-assets-__codelineno-0-22"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get a single number from user input.&quot;&quot;&quot;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#assets-08-agent-mode-part02-assets-__codelineno-0-23"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#assets-08-agent-mode-part02-assets-__codelineno-0-24"></a>        <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#assets-08-agent-mode-part02-assets-__codelineno-0-25"></a>            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">))</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#assets-08-agent-mode-part02-assets-__codelineno-0-26"></a>        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#assets-08-agent-mode-part02-assets-__codelineno-0-27"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please enter a numeric value.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#assets-08-agent-mode-part02-assets-__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#assets-08-agent-mode-part02-assets-__codelineno-0-29"></a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#assets-08-agent-mode-part02-assets-__codelineno-0-30"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#assets-08-agent-mode-part02-assets-__codelineno-0-31"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome to the CLI Calculator!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#assets-08-agent-mode-part02-assets-__codelineno-0-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Available operations: add, subtract, power, modulus&quot;</span><span class="p">)</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#assets-08-agent-mode-part02-assets-__codelineno-0-33"></a>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#assets-08-agent-mode-part02-assets-__codelineno-0-34"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#assets-08-agent-mode-part02-assets-__codelineno-0-35"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">----------------------------------------&quot;</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#assets-08-agent-mode-part02-assets-__codelineno-0-36"></a>        <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter operation (or &#39;quit&#39; to exit): &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#assets-08-agent-mode-part02-assets-__codelineno-0-37"></a>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#assets-08-agent-mode-part02-assets-__codelineno-0-38"></a>        <span class="k">if</span> <span class="n">operation</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;quit&#39;</span><span class="p">,</span> <span class="s1">&#39;exit&#39;</span><span class="p">]:</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#assets-08-agent-mode-part02-assets-__codelineno-0-39"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Goodbye!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#assets-08-agent-mode-part02-assets-__codelineno-0-40"></a>            <span class="k">break</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#assets-08-agent-mode-part02-assets-__codelineno-0-41"></a>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#assets-08-agent-mode-part02-assets-__codelineno-0-42"></a>        <span class="k">if</span> <span class="n">operation</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;add&#39;</span><span class="p">,</span> <span class="s1">&#39;subtract&#39;</span><span class="p">,</span> <span class="s1">&#39;power&#39;</span><span class="p">,</span> <span class="s1">&#39;modulus&#39;</span><span class="p">]:</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#assets-08-agent-mode-part02-assets-__codelineno-0-43"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Unknown operation. Please choose from: add, subtract, power, modulus&quot;</span><span class="p">)</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#assets-08-agent-mode-part02-assets-__codelineno-0-44"></a>            <span class="k">continue</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#assets-08-agent-mode-part02-assets-__codelineno-0-45"></a>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#assets-08-agent-mode-part02-assets-__codelineno-0-46"></a>        <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#assets-08-agent-mode-part02-assets-__codelineno-0-47"></a>            <span class="k">if</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;add&#39;</span><span class="p">:</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#assets-08-agent-mode-part02-assets-__codelineno-0-48"></a>                <span class="n">nums</span> <span class="o">=</span> <span class="n">get_numbers_list</span><span class="p">(</span><span class="s2">&quot;Enter numbers separated by spaces: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#assets-08-agent-mode-part02-assets-__codelineno-0-49"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performing addition on </span><span class="si">{</span><span class="n">nums</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#assets-08-agent-mode-part02-assets-__codelineno-0-50"></a>                <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#assets-08-agent-mode-part02-assets-__codelineno-0-51"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#assets-08-agent-mode-part02-assets-__codelineno-0-52"></a>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#assets-08-agent-mode-part02-assets-__codelineno-0-53"></a>            <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;subtract&#39;</span><span class="p">:</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#assets-08-agent-mode-part02-assets-__codelineno-0-54"></a>                <span class="n">nums</span> <span class="o">=</span> <span class="n">get_numbers_list</span><span class="p">(</span><span class="s2">&quot;Enter numbers separated by spaces: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#assets-08-agent-mode-part02-assets-__codelineno-0-55"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performing subtraction on </span><span class="si">{</span><span class="n">nums</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#assets-08-agent-mode-part02-assets-__codelineno-0-56"></a>                <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#assets-08-agent-mode-part02-assets-__codelineno-0-57"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#assets-08-agent-mode-part02-assets-__codelineno-0-58"></a>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#assets-08-agent-mode-part02-assets-__codelineno-0-59"></a>            <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;power&#39;</span><span class="p">:</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#assets-08-agent-mode-part02-assets-__codelineno-0-60"></a>                <span class="n">base</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter base: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#assets-08-agent-mode-part02-assets-__codelineno-0-61"></a>                <span class="n">exponent</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter exponent: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#assets-08-agent-mode-part02-assets-__codelineno-0-62"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Calculating </span><span class="si">{</span><span class="n">base</span><span class="si">}</span><span class="s2"> raised to the power of </span><span class="si">{</span><span class="n">exponent</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#assets-08-agent-mode-part02-assets-__codelineno-0-63"></a>                <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponent</span><span class="p">)</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#assets-08-agent-mode-part02-assets-__codelineno-0-64"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#assets-08-agent-mode-part02-assets-__codelineno-0-65"></a>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#assets-08-agent-mode-part02-assets-__codelineno-0-66"></a>            <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;modulus&#39;</span><span class="p">:</span>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#assets-08-agent-mode-part02-assets-__codelineno-0-67"></a>                <span class="n">dividend</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter dividend: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#assets-08-agent-mode-part02-assets-__codelineno-0-68"></a>                <span class="n">divisor</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="s2">&quot;Enter divisor: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#assets-08-agent-mode-part02-assets-__codelineno-0-69"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Calculating modulus of </span><span class="si">{</span><span class="n">dividend</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">divisor</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#assets-08-agent-mode-part02-assets-__codelineno-0-70"></a>                <span class="n">result</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="n">dividend</span><span class="p">,</span> <span class="n">divisor</span><span class="p">)</span>
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#assets-08-agent-mode-part02-assets-__codelineno-0-71"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#assets-08-agent-mode-part02-assets-__codelineno-0-72"></a>
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#assets-08-agent-mode-part02-assets-__codelineno-0-73"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#assets-08-agent-mode-part02-assets-__codelineno-0-74"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;An error occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#assets-08-agent-mode-part02-assets-__codelineno-0-75"></a>
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#assets-08-agent-mode-part02-assets-__codelineno-0-76"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#assets-08-agent-mode-part02-assets-__codelineno-0-77"></a>    <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div>
+<h2 id="assets-08-agent-mode-part02-assets-run-command">Run Command<a class="headerlink" href="#assets-08-agent-mode-part02-assets-run-command" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-08-agent-mode-part02-assets-__codelineno-1-1"></a>python3<span class="w"> </span>calculator/cli_calculator.py
+</span></code></pre></div></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #welcome h2:before { content: '1.' counter(counter-welcome-2) ' ' }
                 .print-site-enumerate-headings #welcome h2 {  counter-reset: counter-welcome-3 ;  counter-increment: counter-welcome-2 }
@@ -1414,6 +2290,62 @@
 
                 .print-site-enumerate-headings #06-plan-mode h2:before { content: '2.7.' counter(counter-06-plan-mode-2) ' ' }
                 .print-site-enumerate-headings #06-plan-mode h2 {  counter-increment: counter-06-plan-mode-2 }
+            
+.print-site-enumerate-headings #08-agent-mode-part02 > h1:before { content: '2.9 ' }
+
+                .print-site-enumerate-headings #08-agent-mode-part02 h2:before { content: '2.9.' counter(counter-08-agent-mode-part02-2) ' ' }
+                .print-site-enumerate-headings #08-agent-mode-part02 h2 {  counter-increment: counter-08-agent-mode-part02-2 }
+            
+.print-site-enumerate-headings #section-3 > h1:before { content: '3 ' }
+.print-site-enumerate-headings #assets-calculator-code > h1:before { content: '3.1 ' }
+
+                .print-site-enumerate-headings #assets-calculator-code h2:before { content: '3.1.' counter(counter-assets-calculator-code-2) ' ' }
+                .print-site-enumerate-headings #assets-calculator-code h2 {  counter-increment: counter-assets-calculator-code-2 }
+            
+.print-site-enumerate-headings #assets-calculator-tests > h1:before { content: '3.2 ' }
+
+                .print-site-enumerate-headings #assets-calculator-tests h2:before { content: '3.2.' counter(counter-assets-calculator-tests-2) ' ' }
+                .print-site-enumerate-headings #assets-calculator-tests h2 {  counter-increment: counter-assets-calculator-tests-2 }
+            
+.print-site-enumerate-headings #assets-01-setup-assets > h1:before { content: '3.3 ' }
+
+                .print-site-enumerate-headings #assets-01-setup-assets h2:before { content: '3.3.' counter(counter-assets-01-setup-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-01-setup-assets h2 {  counter-increment: counter-assets-01-setup-assets-2 }
+            
+.print-site-enumerate-headings #assets-02-suggestions-inline-assets > h1:before { content: '3.4 ' }
+
+                .print-site-enumerate-headings #assets-02-suggestions-inline-assets h2:before { content: '3.4.' counter(counter-assets-02-suggestions-inline-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-02-suggestions-inline-assets h2 {  counter-increment: counter-assets-02-suggestions-inline-assets-2 }
+            
+.print-site-enumerate-headings #assets-03-inline-chat-assets > h1:before { content: '3.5 ' }
+
+                .print-site-enumerate-headings #assets-03-inline-chat-assets h2:before { content: '3.5.' counter(counter-assets-03-inline-chat-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-03-inline-chat-assets h2 {  counter-increment: counter-assets-03-inline-chat-assets-2 }
+            
+.print-site-enumerate-headings #assets-04-chat-assets > h1:before { content: '3.6 ' }
+
+                .print-site-enumerate-headings #assets-04-chat-assets h2:before { content: '3.6.' counter(counter-assets-04-chat-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-04-chat-assets h2 {  counter-increment: counter-assets-04-chat-assets-2 }
+            
+.print-site-enumerate-headings #assets-05-builtin-prompts-assets > h1:before { content: '3.7 ' }
+
+                .print-site-enumerate-headings #assets-05-builtin-prompts-assets h2:before { content: '3.7.' counter(counter-assets-05-builtin-prompts-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-05-builtin-prompts-assets h2 {  counter-increment: counter-assets-05-builtin-prompts-assets-2 }
+            
+.print-site-enumerate-headings #assets-06-plan-mode-assets > h1:before { content: '3.8 ' }
+
+                .print-site-enumerate-headings #assets-06-plan-mode-assets h2:before { content: '3.8.' counter(counter-assets-06-plan-mode-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-06-plan-mode-assets h2 {  counter-increment: counter-assets-06-plan-mode-assets-2 }
+            
+.print-site-enumerate-headings #assets-07-agent-mode-part01-assets > h1:before { content: '3.9 ' }
+
+                .print-site-enumerate-headings #assets-07-agent-mode-part01-assets h2:before { content: '3.9.' counter(counter-assets-07-agent-mode-part01-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-07-agent-mode-part01-assets h2 {  counter-increment: counter-assets-07-agent-mode-part01-assets-2 }
+            
+.print-site-enumerate-headings #assets-08-agent-mode-part02-assets > h1:before { content: '3.10 ' }
+
+                .print-site-enumerate-headings #assets-08-agent-mode-part02-assets h2:before { content: '3.10.' counter(counter-assets-08-agent-mode-part02-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-08-agent-mode-part02-assets h2 {  counter-increment: counter-assets-08-agent-mode-part02-assets-2 }
             </style>
 <!--
   Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
@@ -1627,7 +2559,7 @@
       
         <script src="../js/print-site.js"></script>
       
-        <script src="https://buttons.github.io/buttons.js?v=1766276092"></script>
+        <script src="https://buttons.github.io/buttons.js?v=1766342321"></script>
       
     
   </body>
