@@ -60,7 +60,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766354230">
+      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766359656">
     
     <script>__md_scope=new URL("/Copilot-Prompts-Workshop/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -580,6 +580,8 @@
   
     
     
+      
+        
       
         
       
@@ -2523,7 +2525,74 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
 </span></code></pre></div>
 <h2 id="assets-08-agent-mode-part02-assets-run-command">Run Command<a class="headerlink" href="#assets-08-agent-mode-part02-assets-run-command" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#assets-08-agent-mode-part02-assets-__codelineno-1-1"></a>python3<span class="w"> </span>calculator/cli_calculator.py
-</span></code></pre></div></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
+</span></code></pre></div></section><section class="print-page" id="assets-09-custom-instructions-assets" heading-number="3.11"><h1 id="assets-09-custom-instructions-assets-lab-09-custom-instructions-assets">Lab 09 - Custom Instructions Assets<a class="headerlink" href="#assets-09-custom-instructions-assets-lab-09-custom-instructions-assets" title="Permanent link">&para;</a></h1>
+<h2 id="assets-09-custom-instructions-assets-example-custom-instructions-file">Example Custom Instructions File<a class="headerlink" href="#assets-09-custom-instructions-assets-example-custom-instructions-file" title="Permanent link">&para;</a></h2>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#assets-09-custom-instructions-assets-__codelineno-0-1"></a><span class="gh"># GitHub Copilot Custom Instructions for Calculator Project</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#assets-09-custom-instructions-assets-__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#assets-09-custom-instructions-assets-__codelineno-0-3"></a><span class="gu">## 1. Code Style</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#assets-09-custom-instructions-assets-__codelineno-0-4"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Python Version**</span>: Use Python 3.12+ features and syntax.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#assets-09-custom-instructions-assets-__codelineno-0-5"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Type Hints**</span>: All functions and methods MUST include type hints for parameters and return values.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#assets-09-custom-instructions-assets-__codelineno-0-6"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Formatting**</span>: Follow [<span class="nt">PEP 8</span>](<span class="na">https://peps.python.org/pep-0008/</span>). Max line length: 100 characters.
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#assets-09-custom-instructions-assets-__codelineno-0-7"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Naming**</span>: Use descriptive variable and function names. Classes in <span class="sb">`CamelCase`</span>, functions/methods in <span class="sb">`snake_case`</span>.
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#assets-09-custom-instructions-assets-__codelineno-0-8"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Imports**</span>: Group and order imports as per PEP 8. Avoid unused imports.
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#assets-09-custom-instructions-assets-__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#assets-09-custom-instructions-assets-__codelineno-0-10"></a><span class="gu">## 2. Testing</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#assets-09-custom-instructions-assets-__codelineno-0-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Framework**</span>: Use <span class="sb">`pytest`</span> for all tests.
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#assets-09-custom-instructions-assets-__codelineno-0-12"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Coverage**</span>: Target 90%+ code coverage. Include edge cases and error scenarios.
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#assets-09-custom-instructions-assets-__codelineno-0-13"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Structure**</span>: Organize tests by feature/class. Use parametrized tests for similar scenarios.
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#assets-09-custom-instructions-assets-__codelineno-0-14"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Fixtures**</span>: Use pytest fixtures for setup/teardown where appropriate.
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#assets-09-custom-instructions-assets-__codelineno-0-15"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Naming**</span>: Use descriptive test names: <span class="sb">`test_&lt;function&gt;_&lt;scenario&gt;_&lt;expected&gt;`</span>.
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#assets-09-custom-instructions-assets-__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#assets-09-custom-instructions-assets-__codelineno-0-17"></a><span class="gu">## 3. Documentation</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#assets-09-custom-instructions-assets-__codelineno-0-18"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Docstrings**</span>: Use [<span class="nt">Google-style docstrings</span>](<span class="na">https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings</span>) for all public modules, classes, and functions.
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#assets-09-custom-instructions-assets-__codelineno-0-19"></a><span class="k">-</span><span class="w"> </span><span class="gs">**README**</span>: Provide usage examples, installation instructions, and API documentation.
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#assets-09-custom-instructions-assets-__codelineno-0-20"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Comments**</span>: Explain <span class="ge">*why*</span> for complex logic, not just <span class="ge">*what*</span>.
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#assets-09-custom-instructions-assets-__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#assets-09-custom-instructions-assets-__codelineno-0-22"></a><span class="gu">## 4. Architecture</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#assets-09-custom-instructions-assets-__codelineno-0-23"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Design**</span>: Use a class-based, modular structure. <span class="sb">`Calculator`</span> should be the main interface.
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#assets-09-custom-instructions-assets-__codelineno-0-24"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Separation of Concerns**</span>: Keep calculation logic, I/O, and history management in separate modules/classes.
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#assets-09-custom-instructions-assets-__codelineno-0-25"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Extensibility**</span>: Design for easy addition of new features (e.g., plugins, interfaces).
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#assets-09-custom-instructions-assets-__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#assets-09-custom-instructions-assets-__codelineno-0-27"></a><span class="gu">## 5. Behavior</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#assets-09-custom-instructions-assets-__codelineno-0-28"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Responses**</span>: Be concise and professional in explanations and code comments.
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#assets-09-custom-instructions-assets-__codelineno-0-29"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Consistency**</span>: Ensure code and documentation are consistent throughout the project.
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#assets-09-custom-instructions-assets-__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#assets-09-custom-instructions-assets-__codelineno-0-31"></a><span class="gu">## 6. Error Handling</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#assets-09-custom-instructions-assets-__codelineno-0-32"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Exceptions**</span>: Raise <span class="sb">`ValueError`</span> for invalid inputs, <span class="sb">`ZeroDivisionError`</span> for division by zero, and <span class="sb">`TypeError`</span> for type mismatches.
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#assets-09-custom-instructions-assets-__codelineno-0-33"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Messages**</span>: Provide clear, user-friendly error messages.
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#assets-09-custom-instructions-assets-__codelineno-0-34"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Docstrings**</span>: Document all raised exceptions in the <span class="sb">`Raises`</span> section.
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#assets-09-custom-instructions-assets-__codelineno-0-35"></a>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#assets-09-custom-instructions-assets-__codelineno-0-36"></a><span class="gu">## 7. Library Preferences</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#assets-09-custom-instructions-assets-__codelineno-0-37"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Standard Library**</span>: Use only Python standard library modules unless otherwise specified.
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#assets-09-custom-instructions-assets-__codelineno-0-38"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Third-Party**</span>: Avoid external dependencies unless required for testing (e.g., <span class="sb">`pytest`</span>).
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#assets-09-custom-instructions-assets-__codelineno-0-39"></a>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#assets-09-custom-instructions-assets-__codelineno-0-40"></a><span class="gu">## 8. Performance</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#assets-09-custom-instructions-assets-__codelineno-0-41"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Efficiency**</span>: Use efficient algorithms and data structures. Avoid unnecessary computations.
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#assets-09-custom-instructions-assets-__codelineno-0-42"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Scalability**</span>: Consider performance for large input sizes and repeated operations.
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#assets-09-custom-instructions-assets-__codelineno-0-43"></a>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#assets-09-custom-instructions-assets-__codelineno-0-44"></a><span class="gu">## 9. Git Conventions</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#assets-09-custom-instructions-assets-__codelineno-0-45"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Commits**</span>: Use [<span class="nt">Conventional Commits</span>](<span class="na">https://www.conventionalcommits.org/</span>) for commit messages.
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#assets-09-custom-instructions-assets-__codelineno-0-46"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Branches**</span>: Use feature branches for new features and fixes. Merge via pull requests.
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#assets-09-custom-instructions-assets-__codelineno-0-47"></a>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#assets-09-custom-instructions-assets-__codelineno-0-48"></a><span class="gu">## 10. Security</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#assets-09-custom-instructions-assets-__codelineno-0-49"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Input Validation**</span>: Validate all user inputs and function arguments.
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#assets-09-custom-instructions-assets-__codelineno-0-50"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Sanitization**</span>: Sanitize file paths and external data.
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#assets-09-custom-instructions-assets-__codelineno-0-51"></a><span class="k">-</span><span class="w"> </span><span class="gs">**No Secrets**</span>: Do not hardcode secrets or sensitive information.
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#assets-09-custom-instructions-assets-__codelineno-0-52"></a>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#assets-09-custom-instructions-assets-__codelineno-0-53"></a>---
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#assets-09-custom-instructions-assets-__codelineno-0-54"></a>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#assets-09-custom-instructions-assets-__codelineno-0-55"></a><span class="gs">**All code and documentation generated for this project must adhere to these instructions.**</span>
+</span></code></pre></div>
+<h2 id="assets-09-custom-instructions-assets-checklist">Checklist<a class="headerlink" href="#assets-09-custom-instructions-assets-checklist" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Role Definition</strong>: Does it define Copilot&rsquo;s persona?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Code Style</strong>: Are naming conventions and formatting rules clear?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Type Safety</strong>: Are type hints explicitly required?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Testing Strategy</strong>: Is the testing framework and style specified?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Documentation</strong>: Are docstring formats (e.g., Google, NumPy) defined?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Error Handling</strong>: Are there instructions on how to handle exceptions?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Library Preferences</strong>: Does it mention specific libraries to use or avoid?</li>
+</ul></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #welcome h2:before { content: '1.' counter(counter-welcome-2) ' ' }
                 .print-site-enumerate-headings #welcome h2 {  counter-reset: counter-welcome-3 ;  counter-increment: counter-welcome-2 }
@@ -2627,6 +2696,11 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
 
                 .print-site-enumerate-headings #assets-08-agent-mode-part02-assets h2:before { content: '3.10.' counter(counter-assets-08-agent-mode-part02-assets-2) ' ' }
                 .print-site-enumerate-headings #assets-08-agent-mode-part02-assets h2 {  counter-increment: counter-assets-08-agent-mode-part02-assets-2 }
+            
+.print-site-enumerate-headings #assets-09-custom-instructions-assets > h1:before { content: '3.11 ' }
+
+                .print-site-enumerate-headings #assets-09-custom-instructions-assets h2:before { content: '3.11.' counter(counter-assets-09-custom-instructions-assets-2) ' ' }
+                .print-site-enumerate-headings #assets-09-custom-instructions-assets h2 {  counter-increment: counter-assets-09-custom-instructions-assets-2 }
             </style>
 <!--
   Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
@@ -2840,7 +2914,7 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
       
         <script src="../js/print-site.js"></script>
       
-        <script src="https://buttons.github.io/buttons.js?v=1766354230"></script>
+        <script src="https://buttons.github.io/buttons.js?v=1766359656"></script>
       
     
   </body>
