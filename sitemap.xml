@@ -2,54 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/01-setup/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/02-suggestions-inline/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/03-inline-chat/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/04-chat/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/05-builtin-prompts/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/06-plan-mode/</loc>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/EXERCISES/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/welcome/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/README.md/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/custom-instructions/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/good-vs-bad-prompts/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/perf-agent/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/test-agent/</loc>
-         <lastmod>2025-12-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
 </urlset>

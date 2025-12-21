@@ -60,7 +60,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766241639">
+      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766276092">
     
     <script>__md_scope=new URL("/Copilot-Prompts-Workshop/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -710,7 +710,7 @@
 <td>Setup the basic code skeleton</td>
 </tr>
 </tbody>
-</table></section><section class="print-page" id="01-setup" heading-number="2.2"><h1 id="01-setup-setup">Setup<a class="headerlink" href="#01-setup-setup" title="Permanent link">&para;</a></h1>
+</table></section><section class="print-page" id="01-setup" heading-number="2.2"><h1 id="01-setup-lab-01-setup">Lab 01 - Setup<a class="headerlink" href="#01-setup-lab-01-setup" title="Permanent link">&para;</a></h1>
 <ul>
 <li>In this lab we will guide you through the initial setup required to get started with the Copilot Prompting Workshop. </li>
 </ul>
@@ -780,7 +780,7 @@
 </span></code></pre></div></li>
 </ul>
 </li>
-</ul></section><section class="print-page" id="02-suggestions-inline" heading-number="2.3"><h1 id="02-suggestions-inline-inline-suggestion-lab">Inline Suggestion Lab<a class="headerlink" href="#02-suggestions-inline-inline-suggestion-lab" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="02-suggestions-inline" heading-number="2.3"><h1 id="02-suggestions-inline-lab-02-inline-suggestions">Lab 02 - Inline Suggestions<a class="headerlink" href="#02-suggestions-inline-lab-02-inline-suggestions" title="Permanent link">&para;</a></h1>
 <h2 id="02-suggestions-inline-01-single-inline-suggestion">01 - Single Inline Suggestion<a class="headerlink" href="#02-suggestions-inline-01-single-inline-suggestion" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -870,7 +870,49 @@
 <li>You have successfully used GitHub Copilot to add multiple functions to your calculator using inline suggestions.</li>
 </ul>
 </li>
-</ul></section><section class="print-page" id="03-inline-chat" heading-number="2.4"><h1 id="03-inline-chat-lab-03-github-copilot-inline-chat">Lab 03: GitHub Copilot Inline Chat<a class="headerlink" href="#03-inline-chat-lab-03-github-copilot-inline-chat" title="Permanent link">&para;</a></h1>
+</ul>
+<hr />
+<h2 id="02-suggestions-inline-03-contextual-suggestions">03 - Contextual Suggestions<a class="headerlink" href="#02-suggestions-inline-03-contextual-suggestions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>GitHub Copilot understands the context of your code. Since we are building a calculator with arithmetic operations, it can anticipate other common mathematical functions.</p>
+</li>
+<li>
+<p>Let&rsquo;s add a power function.</p>
+</li>
+<li>Place your cursor at the end of the file.</li>
+<li>
+<p>Start typing <code>def power</code> and pause.</p>
+<div class="admonition debug">
+<p class="admonition-title">Adding power function</p>
+<p>Type:
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#02-suggestions-inline-__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">power</span>
+</span></code></pre></div>
+* Copilot will likely suggest:
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#02-suggestions-inline-__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">power</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#02-suggestions-inline-__codelineno-5-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span>
+</span></code></pre></div>
+* Accept the suggestion.</p>
+</div>
+</li>
+<li>
+<p>Now, let&rsquo;s try to add a square root function.</p>
+</li>
+<li>
+<p>Start typing <code>def sq</code>.</p>
+<div class="admonition debug">
+<p class="admonition-title">Adding square root function</p>
+<ul>
+<li>Type:
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#02-suggestions-inline-__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">sq</span>
+</span></code></pre></div></li>
+<li>Copilot should suggest a square root implementation. </li>
+<li>Note that it might suggest importing <code>math</code> or using <code>** 0.5</code>.</li>
+<li>If it suggests <code>math.sqrt</code>, make sure to add <code>import math</code> at the top of the file if it&rsquo;s not there, or let Copilot handle it.</li>
+</ul>
+</div>
+</li>
+</ul></section><section class="print-page" id="03-inline-chat" heading-number="2.4"><h1 id="03-inline-chat-lab-03-inline-chat">Lab 03: Inline Chat<a class="headerlink" href="#03-inline-chat-lab-03-inline-chat" title="Permanent link">&para;</a></h1>
 <ul>
 <li>In this lab, we will explore the <strong>Inline Chat</strong> feature of GitHub Copilot.</li>
 </ul>
@@ -884,19 +926,17 @@
 <p><img src="../assets/images/tldr.png" alt="Inline Chat Overview" style="width:100px; border-radius:25px;"/></p>
 <ol>
 <li><strong>Open Inline Chat</strong>.</li>
-<li><strong>Generate Code</strong>. </li>
+<li><strong>Generate Code</strong>.</li>
 <li><strong>Refactor Code</strong>.</li>
 </ol>
 <hr />
 <h2 id="03-inline-chat-steps-to-use-inline-chat">Steps to Use Inline Chat<a class="headerlink" href="#03-inline-chat-steps-to-use-inline-chat" title="Permanent link">&para;</a></h2>
 <h3 id="03-inline-chat-01-open-inline-chat">01. Open Inline Chat:<a class="headerlink" href="#03-inline-chat-01-open-inline-chat" title="Permanent link">&para;</a></h3>
 <ul>
-<li>This can be done in several ways.<ul>
+<li>This can be done in several ways.</li>
 <li>Press <code>Cmd+I</code> (macOS) or <code>Ctrl+I</code> (Windows/Linux).</li>
 <li>Use the Icon from the <code>Github Copilot</code> top icon.</li>
-<li>Right-click in the editor and select <code>GitHub Copilot: Open Inline Chat</code>. </li>
-</ul>
-</li>
+<li>Right-click in the editor and select <code>GitHub Copilot: Open Inline Chat</code>.</li>
 <li>Once the Inline Chat panel is open, you can type your request in the input box at the bottom.</li>
 </ul>
 <hr />
@@ -904,20 +944,105 @@
 <ul>
 <li>Mark the multiply function in the code editor.</li>
 <li>Open Inline Chat using one of the methods described above.</li>
-<li>
-<p>In the Inline Chat input box, Here are few example prompts you can use:</p>
+<li>In the Inline Chat input box, Here are few example prompts you can use:</li>
+</ul>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#03-inline-chat-__codelineno-0-1"></a>Refactor this function to use arrow function syntax.
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#03-inline-chat-__codelineno-1-1"></a>Explain what this function does.
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#03-inline-chat-__codelineno-2-1"></a>Add documentation comments to this function.
 </span></code></pre></div>
+<hr />
+<h3 id="03-inline-chat-03-task-improve-code-quality">03. Task: Improve Code Quality<a class="headerlink" href="#03-inline-chat-03-task-improve-code-quality" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Let&rsquo;s use Inline Chat to make our code more robust and readable.</li>
+</ul>
+<h3 id="03-inline-chat-0301-add-type-hints">03.01. Add Type Hints:<a class="headerlink" href="#03-inline-chat-0301-add-type-hints" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Select all the code in <code>calculator/calculator.py</code> (<code>Cmd+A</code> / <code>Ctrl+A</code>).</li>
+<li>Open Inline Chat (<code>Cmd+I</code> / <code>Ctrl+I</code>).</li>
+<li>Type: <code>Add type hints to all functions</code>.</li>
+<li>Review the changes (Copilot will show a diff view).</li>
+<li>
+<p>Accept the changes.
+    <details>
+    <summary>Expected Code After Type Hints</summary>
+        <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#03-inline-chat-__codelineno-3-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#03-inline-chat-__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#03-inline-chat-__codelineno-3-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#03-inline-chat-__codelineno-3-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#03-inline-chat-__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#03-inline-chat-__codelineno-3-6"></a><span class="c1"># Add subtract function</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#03-inline-chat-__codelineno-3-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#03-inline-chat-__codelineno-3-8"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#03-inline-chat-__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#03-inline-chat-__codelineno-3-10"></a><span class="c1"># Add function to multiply two numbers</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#03-inline-chat-__codelineno-3-11"></a><span class="c1"># Add function to divide two numbers</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#03-inline-chat-__codelineno-3-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#03-inline-chat-__codelineno-3-13"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#03-inline-chat-__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#03-inline-chat-__codelineno-3-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#03-inline-chat-__codelineno-3-16"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#03-inline-chat-__codelineno-3-17"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#03-inline-chat-__codelineno-3-18"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span></code></pre></div></p>
+</details>
 </li>
 </ul>
-<h3 id="03-inline-chat-03-tasks">03. Tasks<a class="headerlink" href="#03-inline-chat-03-tasks" title="Permanent link">&para;</a></h3>
+<h3 id="03-inline-chat-0302-add-docstrings">03.02. Add Docstrings<a class="headerlink" href="#03-inline-chat-0302-add-docstrings" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Use the inline Chat to add code which will verify that the divided function does not divide by 0.</li>
-<li>Add comments to the the functions.</li>
+<li>Select all the code again.</li>
+<li>Open Inline Chat.</li>
+<li>Type: <code>Add Google-style docstrings to all functions</code>.</li>
+<li>Accept the changes.
+    <details>
+    <summary>Expected Code After Docstrings</summary>
+        <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#03-inline-chat-__codelineno-4-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#03-inline-chat-__codelineno-4-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#03-inline-chat-__codelineno-4-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers.</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#03-inline-chat-__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#03-inline-chat-__codelineno-4-5"></a><span class="sd">    Args:</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#03-inline-chat-__codelineno-4-6"></a><span class="sd">        a: First number.</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#03-inline-chat-__codelineno-4-7"></a><span class="sd">        b: Second number.</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#03-inline-chat-__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#03-inline-chat-__codelineno-4-9"></a><span class="sd">    Returns:</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#03-inline-chat-__codelineno-4-10"></a><span class="sd">        The sum of a and b.</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#03-inline-chat-__codelineno-4-11"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#03-inline-chat-__codelineno-4-12"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#03-inline-chat-__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#03-inline-chat-__codelineno-4-14"></a><span class="o">...</span> <span class="p">(</span><span class="n">similar</span> <span class="n">docstrings</span> <span class="k">for</span> <span class="n">other</span> <span class="n">functions</span><span class="p">)</span> <span class="o">...</span>
+</span></code></pre></div>
+      </details></li>
+</ul>
+<h3 id="03-inline-chat-0303-task-error-handling">03.03. Task: Error Handling<a class="headerlink" href="#03-inline-chat-0303-task-error-handling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ensure our calculator handles edge cases gracefully.</li>
+<li><strong>Validate Division</strong>: <code>("Cannot divide by zero.")</code></li>
+<li>Select the <code>divide</code> function.</li>
+<li>Open Inline Chat.</li>
+<li>Type: <code>Update this function to raise a ValueError if dividing by zero, if not already present</code>.</li>
+<li>Copilot should either confirm it&rsquo;s there or add the check.</li>
+<li>Accept the changes if any.
+    <details>
+    <summary>Expected Code After Error Handling</summary>
+      <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#03-inline-chat-__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#03-inline-chat-__codelineno-5-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Divide two numbers.</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#03-inline-chat-__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#03-inline-chat-__codelineno-5-4"></a><span class="sd">    Args:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#03-inline-chat-__codelineno-5-5"></a><span class="sd">        a: Numerator.</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#03-inline-chat-__codelineno-5-6"></a><span class="sd">        b: Denominator.</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#03-inline-chat-__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#03-inline-chat-__codelineno-5-8"></a><span class="sd">    Raises:</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#03-inline-chat-__codelineno-5-9"></a><span class="sd">        ValueError: If b is zero.</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#03-inline-chat-__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#03-inline-chat-__codelineno-5-11"></a><span class="sd">    Returns:</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#03-inline-chat-__codelineno-5-12"></a><span class="sd">        The result of a divided by b.</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#03-inline-chat-__codelineno-5-13"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#03-inline-chat-__codelineno-5-14"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#03-inline-chat-__codelineno-5-15"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero.&quot;</span><span class="p">)</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#03-inline-chat-__codelineno-5-16"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+</span></code></pre></div>
+      </details></li>
 </ul></section><section class="print-page" id="04-chat" heading-number="2.5"><h1 id="04-chat-lab-04-chat">Lab 04 - Chat<a class="headerlink" href="#04-chat-lab-04-chat" title="Permanent link">&para;</a></h1>
 <ul>
 <li>In this lab we will write prompts in the chat asking it to create main python code which will test our calculator.</li>
@@ -950,6 +1075,7 @@
 <hr />
 <h3 id="04-chat-02-use-chat">02. Use Chat<a class="headerlink" href="#04-chat-02-use-chat" title="Permanent link">&para;</a></h3>
 <ul>
+<li>In this task, we will use Chat to generate a <code>main.py</code> file that tests all functions in our <code>calculator.py</code> file.</li>
 <li>
 <p>In the Chat input box, write the following prompt:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#04-chat-__codelineno-0-1"></a>1. Generate a main.py file that tests all functions in calculator.py
@@ -1001,6 +1127,82 @@
 </span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#04-chat-__codelineno-1-41"></a>    <span class="n">test_multiply</span><span class="p">()</span>
 </span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#04-chat-__codelineno-1-42"></a>    <span class="n">test_divide</span><span class="p">()</span>
 </span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#04-chat-__codelineno-1-43"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</details></p>
+</li>
+</ul>
+<hr />
+<h3 id="04-chat-03-adding-tests">03. Adding tests<a class="headerlink" href="#04-chat-03-adding-tests" title="Permanent link">&para;</a></h3>
+<ul>
+<li>In the chat windows, Choose the <code>Agent Mode</code></li>
+<li>Open the <code>calculator/calculator.py</code> file or add it as context to the chat.</li>
+<li>
+<p>Type the following prompt:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#04-chat-__codelineno-2-1"></a>1. Add square and root functions to the calculator.py file
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#04-chat-__codelineno-2-2"></a>2. Add tests for power and square root functions in main.py
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#04-chat-__codelineno-2-3"></a>3. Ensure the square root function handles negative inputs by raising a ValueError
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#04-chat-__codelineno-2-4"></a>4. Print out instructions on how to run the tests
+</span></code></pre></div></p>
+<p><details>
+<summary>Possible solution</summary></p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#04-chat-__codelineno-3-1"></a><span class="c1"># calculator.py</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#04-chat-__codelineno-3-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#04-chat-__codelineno-3-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the square of a number.</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#04-chat-__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#04-chat-__codelineno-3-5"></a><span class="sd">    Args:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#04-chat-__codelineno-3-6"></a><span class="sd">        n: The number to square.</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#04-chat-__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#04-chat-__codelineno-3-8"></a><span class="sd">    Returns:</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#04-chat-__codelineno-3-9"></a><span class="sd">        The square of n.</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#04-chat-__codelineno-3-10"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#04-chat-__codelineno-3-11"></a>    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#04-chat-__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#04-chat-__codelineno-3-13"></a><span class="k">def</span><span class="w"> </span><span class="nf">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#04-chat-__codelineno-3-14"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the square root of a number.</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#04-chat-__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#04-chat-__codelineno-3-16"></a><span class="sd">    Args:</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#04-chat-__codelineno-3-17"></a><span class="sd">        n: The number to find the square root of.</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#04-chat-__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#04-chat-__codelineno-3-19"></a><span class="sd">    Returns:</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#04-chat-__codelineno-3-20"></a><span class="sd">        The square root of n.</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#04-chat-__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#04-chat-__codelineno-3-22"></a><span class="sd">    Raises:</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#04-chat-__codelineno-3-23"></a><span class="sd">        ValueError: If n is negative.</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#04-chat-__codelineno-3-24"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#04-chat-__codelineno-3-25"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#04-chat-__codelineno-3-26"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot calculate square root of a negative number.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#04-chat-__codelineno-3-27"></a>    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#04-chat-__codelineno-3-28"></a>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#04-chat-__codelineno-3-29"></a><span class="c1"># --------------------------------</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#04-chat-__codelineno-3-30"></a>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#04-chat-__codelineno-3-31"></a><span class="c1"># main.py</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#04-chat-__codelineno-3-32"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_power</span><span class="p">():</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#04-chat-__codelineno-3-33"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the power function.&quot;&quot;&quot;</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#04-chat-__codelineno-3-34"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#04-chat-__codelineno-3-35"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#04-chat-__codelineno-3-36"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.25</span>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#04-chat-__codelineno-3-37"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_power passed&quot;</span><span class="p">)</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#04-chat-__codelineno-3-38"></a>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#04-chat-__codelineno-3-39"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_square_root</span><span class="p">():</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#04-chat-__codelineno-3-40"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the square root function.&quot;&quot;&quot;</span>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#04-chat-__codelineno-3-41"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">square_root</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#04-chat-__codelineno-3-42"></a>    <span class="k">assert</span> <span class="n">calculator</span><span class="o">.</span><span class="n">square_root</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#04-chat-__codelineno-3-43"></a>    <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#04-chat-__codelineno-3-44"></a>        <span class="n">calculator</span><span class="o">.</span><span class="n">square_root</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#04-chat-__codelineno-3-45"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: ValueError not raised for negative input&quot;</span><span class="p">)</span>
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#04-chat-__codelineno-3-46"></a>    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#04-chat-__codelineno-3-47"></a>        <span class="k">assert</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Cannot compute square root of negative number.&quot;</span>
+</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#04-chat-__codelineno-3-48"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_square_root passed&quot;</span><span class="p">)</span>
+</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#04-chat-__codelineno-3-49"></a>
+</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#04-chat-__codelineno-3-50"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#04-chat-__codelineno-3-51"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running tests...&quot;</span><span class="p">)</span>
+</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#04-chat-__codelineno-3-52"></a>    <span class="n">test_add</span><span class="p">()</span>
+</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#04-chat-__codelineno-3-53"></a>    <span class="n">test_subtract</span><span class="p">()</span>
+</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#04-chat-__codelineno-3-54"></a>    <span class="n">test_multiply</span><span class="p">()</span>
+</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#04-chat-__codelineno-3-55"></a>    <span class="n">test_divide</span><span class="p">()</span>
+</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#04-chat-__codelineno-3-56"></a>    <span class="n">test_power</span><span class="p">()</span>
+</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#04-chat-__codelineno-3-57"></a>    <span class="n">test_square_root</span><span class="p">()</span>
+</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#04-chat-__codelineno-3-58"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed!&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 </details></p>
 </li>
@@ -1063,6 +1265,7 @@
 </table>
 </li>
 </ul>
+<hr />
 <h2 id="05-builtin-prompts-exercises">Exercises<a class="headerlink" href="#05-builtin-prompts-exercises" title="Permanent link">&para;</a></h2>
 <h3 id="05-builtin-prompts-1-explain-code">1. Explain Code<a class="headerlink" href="#05-builtin-prompts-1-explain-code" title="Permanent link">&para;</a></h3>
 <ol>
@@ -1074,7 +1277,7 @@
 <h3 id="05-builtin-prompts-2-generate-documentation">2. Generate Documentation<a class="headerlink" href="#05-builtin-prompts-2-generate-documentation" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Select the <code>subtract</code> function in <code>calculator/calculator.py</code>.</li>
-<li>Type <code>/doc</code> in the Chat or right-click and select <strong>Copilot &gt; Generate Docs</strong>.</li>
+<li>Type <code>/doc</code> in the Chat or right-click inside the <code>calculator.py</code>  and select <strong>Copilot &gt; Generate Docs</strong>.</li>
 <li>Observe how Copilot adds docstrings to your function.</li>
 </ol>
 <h3 id="05-builtin-prompts-3-generate-tests">3. Generate Tests<a class="headerlink" href="#05-builtin-prompts-3-generate-tests" title="Permanent link">&para;</a></h3>
@@ -1083,7 +1286,88 @@
 <li>Type <code>/tests</code> in the Chat.</li>
 <li>Copilot will suggest a new test file or add tests to an existing one.</li>
 <li>Review the generated tests and ensure they cover edge cases (like division by zero).</li>
-</ol></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
+</ol></section><section class="print-page" id="06-plan-mode" heading-number="2.7"><h1 id="06-plan-mode-lab-06-plan-mode">Lab 06 - Plan Mode<a class="headerlink" href="#06-plan-mode-lab-06-plan-mode" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In this lab, we will explore <strong>Plan Mode</strong>, a powerful feature that allows GitHub Copilot to <strong>analyze complex requests</strong> and <strong>propose</strong> structured plans before implementation.</li>
+<li>This is particularly useful for architectural changes, refactoring, or implementing large features.</li>
+</ul>
+<h2 id="06-plan-mode-overview">Overview<a class="headerlink" href="#06-plan-mode-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Plan Mode</strong> enables Copilot to:</p>
+<ul>
+<li>Analyze your entire workspace context.</li>
+<li>Break down complex problems into manageable steps.</li>
+<li>Propose multiple implementation strategies.</li>
+<li>Execute the chosen plan across multiple files.</li>
+<li>Facilitate large-scale refactoring or feature additions.</li>
+<li>Improve collaboration by providing clear implementation plans.</li>
+<li>Enhance code quality by ensuring thoughtful design before coding.</li>
+<li>Save time by automating multi-step coding tasks.</li>
+</ul>
+</li>
+<li>
+<p>Example:</p>
+</li>
+<li>Once the plan is generated, you can review it and choose to proceed with the implementation.
+<img src="../assets/images/plan-mode.png" style="max-width: 600px;"></li>
+</ul>
+<hr />
+<h2 id="06-plan-mode-exercises">Exercises<a class="headerlink" href="#06-plan-mode-exercises" title="Permanent link">&para;</a></h2>
+<h3 id="06-plan-mode-1-planning-a-class-based-calculator">1. Planning a Class-Based Calculator<a class="headerlink" href="#06-plan-mode-1-planning-a-class-based-calculator" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>We will use Plan Mode to refactor our existing functional calculator into a more robust Object-Oriented design.</p>
+<ul>
+<li>Delete the existing code in <code>calculator/calculator.py</code> and leave it empty for now.</li>
+<li>Open the <strong>Copilot Chat</strong> or <strong>Copilot Edits</strong> view.</li>
+<li>Switch to <strong>Plan Mode</strong> (if available in the dropdown) or ensure you are using <strong>Copilot Edits</strong> which supports multi-file planning.</li>
+<li>Type the following prompt into the chat:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#06-plan-mode-__codelineno-0-1"></a>Plan a better calculator which will be based upon python 
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#06-plan-mode-__codelineno-0-2"></a>class and will replace the current calculator code.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#06-plan-mode-__codelineno-0-3"></a>The calculator should only support add and subtract, 
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#06-plan-mode-__codelineno-0-4"></a>but will have the ability to pass arguments as a list as well.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#06-plan-mode-__codelineno-0-5"></a>The plan should include the necessary changes to the existing files 
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#06-plan-mode-__codelineno-0-6"></a>and any new files that need to be created.
+</span></code></pre></div></li>
+<li>You should see Copilot analyzing your request. (This may take a few moments and you should see something like this):
+<img src="../assets/images/plan-mode-results-1.png" style="max-width: 800px;"></li>
+<li><strong>Review the Results</strong>: Copilot will analyze the request and suggest a way to implement it.</li>
+<li><strong>Select an Approach</strong>: If multiple approaches are suggested, choose the one that best fits your needs.</li>
+<li><strong>Review the Plan</strong>: Copilot will outline the steps it will take, such as:<ul>
+<li>Creating the <code>Calculator</code> class in <code>calculator/calculator.py</code>.</li>
+<li>Updating <code>calculator/main.py</code> to use the new class.</li>
+<li>Updating tests to reflect the API changes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Execute</strong>: Click <strong>Start Implementation</strong> and follow the instructions.</p>
+</li>
+<li><strong>Use background Agent</strong>: If prompted, allow Copilot to use the background agent to make changes across multiple files.</li>
+<li>
+<p><strong>Follow Changes</strong>: Monitor the changes being made to ensure they align with your expectations. The progress will be shown in the Copilot Sessions list view</p>
+<p><img src="../assets/images/plan-mode-agent.png" style="max-width: 600px;"></p>
+</li>
+</ul>
+<hr />
+<h3 id="06-plan-mode-2-verifying-the-code">2. Verifying the Code<a class="headerlink" href="#06-plan-mode-2-verifying-the-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Once the implementation is complete, you should see something like this:
+    <img src="../assets/images/plan-mode-agent-1.png" style="max-width: 800px;"></p>
+</li>
+<li>
+<p>Open <code>calculator/calculator.py</code> and confirm that the functions are now methods within a <code>Calculator</code> class.</p>
+</li>
+<li>Check <code>calculator/main.py</code> to see how the <code>Calculator</code> class is instantiated and used.</li>
+<li>
+<p>Run the application or tests to ensure the refactor didn&rsquo;t break existing functionality.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#06-plan-mode-__codelineno-1-1"></a>python3<span class="w"> </span>calculator/main.py
+</span></code></pre></div>
+</li>
+</ul></section></section></div><style>.print-site-enumerate-headings #welcome > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #welcome h2:before { content: '1.' counter(counter-welcome-2) ' ' }
                 .print-site-enumerate-headings #welcome h2 {  counter-reset: counter-welcome-3 ;  counter-increment: counter-welcome-2 }
@@ -1121,6 +1405,11 @@
 
                 .print-site-enumerate-headings #05-builtin-prompts h2:before { content: '2.6.' counter(counter-05-builtin-prompts-2) ' ' }
                 .print-site-enumerate-headings #05-builtin-prompts h2 {  counter-increment: counter-05-builtin-prompts-2 }
+            
+.print-site-enumerate-headings #06-plan-mode > h1:before { content: '2.7 ' }
+
+                .print-site-enumerate-headings #06-plan-mode h2:before { content: '2.7.' counter(counter-06-plan-mode-2) ' ' }
+                .print-site-enumerate-headings #06-plan-mode h2 {  counter-increment: counter-06-plan-mode-2 }
             </style>
 <!--
   Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
@@ -1334,7 +1623,7 @@
       
         <script src="../js/print-site.js"></script>
       
-        <script src="https://buttons.github.io/buttons.js?v=1766241639"></script>
+        <script src="https://buttons.github.io/buttons.js?v=1766276092"></script>
       
     
   </body>
