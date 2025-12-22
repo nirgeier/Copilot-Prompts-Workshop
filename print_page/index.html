@@ -60,7 +60,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766359656">
+      <link rel="stylesheet" href="../assets/stylesheets/codewizard.css?v=1766437737">
     
     <script>__md_scope=new URL("/Copilot-Prompts-Workshop/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -531,6 +531,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -786,11 +792,12 @@
                         <h1>Labs<a class='headerlink' href='#section-2' title='Permanent link'></a>
                         </h1>
                     <section class="print-page" id="index" heading-number="2.1"><h1 id="index-list-of-labs">List of Labs<a class="headerlink" href="#index-list-of-labs" title="Permanent link">&para;</a></h1>
+<h2 id="index-labs-list">🧪 Labs List<a class="headerlink" href="#index-labs-list" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Lab Number</th>
-<th>Lab Title</th>
+<th>Lab</th>
+<th>Title</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -798,12 +805,62 @@
 <tr>
 <td>01</td>
 <td>Setup</td>
-<td>Initial setup to prepare your environment for the Copilot Prompting Workshop.</td>
+<td>Initial setup to prepare your environment for the workshop.</td>
 </tr>
 <tr>
 <td>02</td>
-<td>Foundations</td>
-<td>Setup the basic code skeleton</td>
+<td>Inline Suggestions</td>
+<td>Use Copilot&rsquo;s inline suggestions to build calculator basics.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Inline Chat</td>
+<td>Use Inline Chat to refactor, document, and improve code.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Chat</td>
+<td>Use Copilot Chat to generate and test code interactively.</td>
+</tr>
+<tr>
+<td>05</td>
+<td>BuiltIn Prompts</td>
+<td>Explore Copilot&rsquo;s built-in slash commands for docs and tests.</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Plan Mode</td>
+<td>Use Plan Mode for multi-step refactoring and planning.</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Agent Mode (Part 1)</td>
+<td>Use Agent Mode for TDD and iterative code/test improvements.</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Agent Mode (Part 2)</td>
+<td>Build a CLI calculator using Copilot Agent.</td>
+</tr>
+<tr>
+<td>09</td>
+<td>Custom Instructions</td>
+<td>Create project-wide and user-specific Copilot instructions.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Advanced Instructions</td>
+<td>Advanced file-specific Copilot instructions and scoping.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Custom Prompts</td>
+<td>Master context variables and few-shot prompting techniques.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Custom Agents</td>
+<td>Build and customize your own Copilot Agents.</td>
 </tr>
 </tbody>
 </table></section><section class="print-page" id="01-setup" heading-number="2.2"><h1 id="01-setup-lab-01-setup">Lab 01 - Setup<a class="headerlink" href="#01-setup-lab-01-setup" title="Permanent link">&para;</a></h1>
@@ -1543,6 +1600,139 @@
 </li>
 <li>Update the <code>calculator/calculator.py</code> file with appropriate docstrings for the class and its methods.</li>
 <li>Create or update the <code>README.md</code> file in the project root with usage examples and explanations based on the plan provided by Copilot.</li>
+</ul></section><section class="print-page" id="07-agent-mode-part01" heading-number="2.8"><h1 id="07-agent-mode-part01-lab-07-agent-mode-part-01">Lab 07 - Agent Mode (Part 01)<a class="headerlink" href="#07-agent-mode-part01-lab-07-agent-mode-part-01" title="Permanent link">&para;</a></h1>
+<ul>
+<li>In this lab, we will explore <strong>Agent Mode</strong>.</li>
+<li><code>Agent Mode</code> can <strong>run terminal commands</strong>, <strong>create and edit files</strong>, and <strong>iterate</strong> on (user and automate) requests until the task is complete.</li>
+<li><code>Agent Mode</code> is ideal for tasks like &ldquo;fix all linting errors&rdquo;, &ldquo;implement this feature and add tests&rdquo;, or &ldquo;refactor this module&rdquo;.</li>
+</ul>
+<h2 id="07-agent-mode-part01-overview">Overview<a class="headerlink" href="#07-agent-mode-part01-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Agent Mode</strong> enables Copilot to:</li>
+<li>Execute terminal commands (run tests, list files, etc.).</li>
+<li>Create, read, and edit multiple files.</li>
+<li>Analyze error output and self-correct.</li>
+<li>Handle multi-step instructions without constant user intervention.</li>
+<li>Iterate until the task is complete.</li>
+<li>work and update multiple files in a single session.</li>
+</ul>
+<hr />
+<h2 id="07-agent-mode-part01-exercises">Exercises<a class="headerlink" href="#07-agent-mode-part01-exercises" title="Permanent link">&para;</a></h2>
+<h3 id="07-agent-mode-part01-1-tdd-with-agent">1. TDD with Agent<a class="headerlink" href="#07-agent-mode-part01-1-tdd-with-agent" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>We will use <code>Agent Mode</code> to implement new features in our <code>Calculator</code> class using a Test-Driven Development (TDD) approach.</p>
+</li>
+<li>
+<p><strong>Create New Tests</strong>:</p>
+<ul>
+<li>Create a new file named <code>tests/test_advanced_calc.py</code>.</li>
+<li>Add the following code to define tests for <code>power</code> (exponentiation) and <code>modulus</code> (remainder) operations, <strong>which don&rsquo;t exist yet</strong>.</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#07-agent-mode-part01-__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#07-agent-mode-part01-__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator.calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#07-agent-mode-part01-__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#07-agent-mode-part01-__codelineno-0-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_power</span><span class="p">():</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#07-agent-mode-part01-__codelineno-0-5"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#07-agent-mode-part01-__codelineno-0-6"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#07-agent-mode-part01-__codelineno-0-7"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#07-agent-mode-part01-__codelineno-0-8"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.5</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#07-agent-mode-part01-__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#07-agent-mode-part01-__codelineno-0-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_modulus</span><span class="p">():</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#07-agent-mode-part01-__codelineno-0-11"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#07-agent-mode-part01-__codelineno-0-12"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#07-agent-mode-part01-__codelineno-0-13"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span></code></pre></div>
+</li>
+</ul>
+<hr />
+<h3 id="07-agent-mode-part01-2-using-agent-mode">2. Using Agent Mode:<a class="headerlink" href="#07-agent-mode-part01-2-using-agent-mode" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Open <strong>Copilot Chat</strong></li>
+<li>Open New Chat</li>
+<li>Switch to <strong>Agent Mode</strong> </li>
+<li>Ensure the working directory is set to the root of the <code>Copilot-Prompts-Workshop</code> project</li>
+<li>Make sure you already have <code>pytest</code> installed in your environment.</li>
+<li>Type the following prompt:
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#07-agent-mode-part01-__codelineno-1-1"></a>I have created a new test file `tests/test_advanced_calc.py` with new tests.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#07-agent-mode-part01-__codelineno-1-2"></a>Please run these tests to confirm they fail, then implement the missing
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#07-agent-mode-part01-__codelineno-1-3"></a>methods in `calculator/calculator.py` to make all tests pass.
+</span></code></pre></div></li>
+<li>
+<p><strong>Observe the Agent</strong>:
+      <img src="../assets/images/calc-errors.png" alt="Agent Working" style="max-width=800px"/></p>
+<ul>
+<li>The Agent will likely:<ul>
+<li>Run <code>pytest tests/test_advanced_calc.py</code> and see the failures (AttributeError).</li>
+<li>Read <code>calculator/calculator.py</code>.</li>
+<li>Edit <code>calculator/calculator.py</code> to add <code>power</code> and <code>modulus</code> methods.</li>
+<li>Re-run the tests to verify they pass.</li>
+</ul>
+</li>
+</ul>
+<p><img src="../assets/images/calc-pass.png" alt="Agent Working" style="max-width=800px"/></p>
+</li>
+</ul>
+<hr />
+<h3 id="07-agent-mode-part01-3-handling-edge-cases-and-iteration">3. Handling Edge Cases and Iteration<a class="headerlink" href="#07-agent-mode-part01-3-handling-edge-cases-and-iteration" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Now let&rsquo;s ask the Agent to handle a more complex scenario involving error handling.</p>
+</li>
+<li>
+<p><strong>Update Requirements</strong>:</p>
+<ul>
+<li>We want to ensure <code>modulus</code> raises a <code>ValueError</code> when dividing by zero.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prompt</strong>:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#07-agent-mode-part01-__codelineno-2-1"></a>Update the calculator with `modulus` method to raise a ValueError if the second argument is 0.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#07-agent-mode-part01-__codelineno-2-2"></a>Also, add a test case to `tests/test_advanced_calc.py` that verifies this exception is raised.
+</span></code></pre></div>
+  <details>
+  <summary>Example Test Case for Exception</summary>
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#07-agent-mode-part01-__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#07-agent-mode-part01-__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculator.calculator</span><span class="w"> </span><span class="kn">import</span> <span class="n">Calculator</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#07-agent-mode-part01-__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#07-agent-mode-part01-__codelineno-3-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_power</span><span class="p">():</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#07-agent-mode-part01-__codelineno-3-5"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#07-agent-mode-part01-__codelineno-3-6"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#07-agent-mode-part01-__codelineno-3-7"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#07-agent-mode-part01-__codelineno-3-8"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.5</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#07-agent-mode-part01-__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#07-agent-mode-part01-__codelineno-3-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_modulus</span><span class="p">():</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#07-agent-mode-part01-__codelineno-3-11"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#07-agent-mode-part01-__codelineno-3-12"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#07-agent-mode-part01-__codelineno-3-13"></a>    <span class="k">assert</span> <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#07-agent-mode-part01-__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#07-agent-mode-part01-__codelineno-3-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_modulus_by_zero</span><span class="p">():</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#07-agent-mode-part01-__codelineno-3-16"></a>    <span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#07-agent-mode-part01-__codelineno-3-17"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="n">match</span><span class="o">=</span><span class="s2">&quot;Cannot calculate modulus with zero divisor.&quot;</span><span class="p">):</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#07-agent-mode-part01-__codelineno-3-18"></a>        <span class="n">calc</span><span class="o">.</span><span class="n">modulus</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></code></pre></div>
+  </details></p>
+</li>
+<li>
+<p><strong>Review Changes</strong>:</p>
+<ul>
+<li>The Agent should:<ul>
+<li>Modify <code>calculator/calculator.py</code> to add the check.</li>
+<li>Modify <code>tests/test_advanced_calc.py</code> to add the exception test.</li>
+<li>Run the tests to confirm everything is green.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="07-agent-mode-part01-summary">Summary<a class="headerlink" href="#07-agent-mode-part01-summary" title="Permanent link">&para;</a></h2>
+<ul>
+<li>You have successfully used <strong>Agent Mode</strong> to:</li>
+<li>Detect failing tests.</li>
+<li>Implement code to satisfy requirements.</li>
+<li>Iterate on code to add error handling and additional test coverage.</li>
+<li>Verify the solution by running tests <strong>automatically</strong>.</li>
 </ul></section><section class="print-page" id="08-agent-mode-part02" heading-number="2.9"><h1 id="08-agent-mode-part02-lab-08-building-a-cli-with-copilot-agent">Lab 08 - Building a CLI with Copilot Agent<a class="headerlink" href="#08-agent-mode-part02-lab-08-building-a-cli-with-copilot-agent" title="Permanent link">&para;</a></h1>
 <ul>
 <li>In this lab, we will leverage the power of GitHub Copilot Agent to expand our calculator project. </li>
@@ -1893,8 +2083,9 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#09-custom-instructions-__codelineno-0-13"></a>  08. Performance (efficient algorithms)
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#09-custom-instructions-__codelineno-0-14"></a>  09. Git Conventions (Conventional Commits)
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#09-custom-instructions-__codelineno-0-15"></a>  10. Security (input validation)
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#09-custom-instructions-__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#09-custom-instructions-__codelineno-0-17"></a>Format the instructions in Markdown and save it in the `.github/copilot-instructions.md` file.
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#09-custom-instructions-__codelineno-0-16"></a>  11. Use &quot;double quotes&quot; for strings.
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#09-custom-instructions-__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#09-custom-instructions-__codelineno-0-18"></a>Format the instructions in Markdown and save it in the `.github/copilot-instructions.md` file.
 </span></code></pre></div>
 </div>
 </li>
@@ -2015,7 +2206,496 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
 <hr />
 <center>
   <img src="https://raw.githubusercontent.com/nirgeier/labs-assets/main/assets/images/well_done.jpg" alt="Well Done" style="max-width:400px; border-radius:50% ;"/>
-</center></section></section>
+</center></section><section class="print-page" id="10-advanced-instructions" heading-number="2.11"><h1 id="10-advanced-instructions-lab-10-advanced-instructions">Lab 10 - Advanced Instructions<a class="headerlink" href="#10-advanced-instructions-lab-10-advanced-instructions" title="Permanent link">&para;</a></h1>
+<h2 id="10-advanced-instructions-01-preface">01. Preface<a class="headerlink" href="#10-advanced-instructions-01-preface" title="Permanent link">&para;</a></h2>
+<ul>
+<li>This lab is all about Advanced Instructions for GitHub Copilot.</li>
+<li>We will explore how to create custom instructions for specific coding styles, best practices, and project conventions.</li>
+</ul>
+<hr />
+<h2 id="10-advanced-instructions-02-objectives">02. Objectives<a class="headerlink" href="#10-advanced-instructions-02-objectives" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Understand the concept of Advanced Instructions in GitHub Copilot.</li>
+<li>Learn how to create and implement custom instructions for your projects.</li>
+<li>Explore best practices for writing effective instructions.</li>
+<li>Apply advanced instructions to a sample project.</li>
+</ul>
+<hr />
+<h2 id="10-advanced-instructions-03-advanced-file-specific-scoping">03. Advanced File-Specific Scoping<a class="headerlink" href="#10-advanced-instructions-03-advanced-file-specific-scoping" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In this lab, we will learn how to create file-specific instructions for GitHub Copilot.</li>
+<li>This allows us to tailor Copilot&rsquo;s behavior based on the specific files or directories in our project.</li>
+<li>We will create a set of instructions that apply only to backend files in the <code>script</code> directory.</li>
+<li>At the start of the file, create a <code>frontmatter</code> block containing the applyTo keyword. </li>
+<li>Use glob syntax to specify what files or directories the instructions apply to.</li>
+<li>
+<p>Glob examples:</p>
+<table>
+<thead>
+<tr>
+<th>Glob Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*</code></td>
+<td>Match all files in the current directory.</td>
+</tr>
+<tr>
+<td><code>**</code> or <code>**/*</code></td>
+<td>Match all files in all directories.</td>
+</tr>
+<tr>
+<td><code>*.sh</code></td>
+<td>Match all <code>.sh</code> files in the current directory.</td>
+</tr>
+<tr>
+<td><code>**/*.sh</code></td>
+<td>Recursively match all <code>.sh</code> files in all directories.</td>
+</tr>
+<tr>
+<td><code>src/*.sh</code></td>
+<td>Match all <code>.sh</code> files in the src directory.sh).</td>
+</tr>
+<tr>
+<td><code>src/**/*.sh</code></td>
+<td>Recursively match all <code>.sh</code> files in the src directory.sh).</td>
+</tr>
+<tr>
+<td><code>**/subdir/**/*.sh</code></td>
+<td>Recursively match all <code>.sh</code> files in any subdir directory at any depth</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>After the <code>frontmatter</code>, add your custom instructions for the specified files or directories.</p>
+</li>
+</ul>
+<hr />
+<h4 id="10-advanced-instructions-step-by-step-instructions">Step-by-Step Instructions<a class="headerlink" href="#10-advanced-instructions-step-by-step-instructions" title="Permanent link">&para;</a></h4>
+<h2 id="10-advanced-instructions-04-set-up-the-folder-structure">04. Set Up the Folder Structure<a class="headerlink" href="#10-advanced-instructions-04-set-up-the-folder-structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Create a folder named <code>.github/instructions/</code> in the root of your project.</li>
+<li>This folder will contain our custom instruction files.</li>
+</ul>
+<h2 id="10-advanced-instructions-05-create-the-instruction-file">05. Create the Instruction File<a class="headerlink" href="#10-advanced-instructions-05-create-the-instruction-file" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Inside the <code>.github/instructions/</code> folder, create a new file named <code>script.instructions.md</code>.</li>
+<li>This file will contain the specific instructions for files in the <code>script</code> directory.</li>
+</ul>
+<h2 id="10-advanced-instructions-06-add-scoped-instructions">06. Add Scoped Instructions<a class="headerlink" href="#10-advanced-instructions-06-add-scoped-instructions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Open the <code>.github/instructions/script.instructions.md</code> file and add the following frontmatter at the top:
+    <div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#10-advanced-instructions-__codelineno-0-1"></a>---
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#10-advanced-instructions-__codelineno-0-2"></a><span class="gu">applyTo: &quot;script/**/*.sh&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#10-advanced-instructions-__codelineno-0-3"></a><span class="gu">---</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#10-advanced-instructions-__codelineno-0-4"></a><span class="gh"># Custom Instructions for Bash Scripts</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#10-advanced-instructions-__codelineno-0-5"></a><span class="k">-</span><span class="w"> </span>All scripts must start with <span class="sb">`#!/bin/bash`</span> as the shebang.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#10-advanced-instructions-__codelineno-0-6"></a><span class="k">-</span><span class="w"> </span>Before any logic, check if a <span class="sb">`.env`</span> file exists in the same directory as the script
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#10-advanced-instructions-__codelineno-0-7"></a><span class="k">-</span><span class="w"> </span>if <span class="sb">`.env`</span> exists, load it with <span class="sb">`source &quot;.env&quot;`</span>.
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#10-advanced-instructions-__codelineno-0-8"></a><span class="k">-</span><span class="w"> </span>Define color variables for output (e.g., green for info, red for errors, yellow for warnings, blue for debug).
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#10-advanced-instructions-__codelineno-0-9"></a><span class="k">-</span><span class="w"> </span>Implement and use the following logging functions for all output:
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#10-advanced-instructions-__codelineno-0-10"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="sb">`log_info`</span> for informational messages (green)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#10-advanced-instructions-__codelineno-0-11"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="sb">`log_error`</span> for error messages (red, output to stderr)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#10-advanced-instructions-__codelineno-0-12"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="sb">`log_debug`</span> for debug messages (blue, only print if a DEBUG variable is set)
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#10-advanced-instructions-__codelineno-0-13"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span><span class="sb">`log_warn`</span> for warnings (yellow)
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#10-advanced-instructions-__codelineno-0-14"></a><span class="k">-</span><span class="w"> </span>Always quote variables in bash to prevent word splitting and globbing.
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#10-advanced-instructions-__codelineno-0-15"></a><span class="k">-</span><span class="w"> </span>Use <span class="sb">`set -euo pipefail`</span> at the top of the script for safer error handling.
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#10-advanced-instructions-__codelineno-0-16"></a><span class="k">-</span><span class="w"> </span>Use functions for logical grouping of code; avoid long, unstructured scripts.
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#10-advanced-instructions-__codelineno-0-17"></a><span class="k">-</span><span class="w"> </span>Add comments to explain non-obvious logic.
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#10-advanced-instructions-__codelineno-0-18"></a><span class="k">-</span><span class="w"> </span>Use <span class="sb">`$(...)`</span> for command substitution, not backticks.
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#10-advanced-instructions-__codelineno-0-19"></a><span class="k">-</span><span class="w"> </span>Prefer <span class="sb">`[[ ... ]]`</span> for conditionals over <span class="sb">`[ ... ]`</span>.
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#10-advanced-instructions-__codelineno-0-20"></a><span class="k">-</span><span class="w"> </span>Scripts should exit with a non-zero status on error.
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#10-advanced-instructions-__codelineno-0-21"></a><span class="k">-</span><span class="w"> </span>Avoid hardcoding paths; use variables and check for file existence.
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#10-advanced-instructions-__codelineno-0-22"></a><span class="k">-</span><span class="w"> </span>Use <span class="sb">`trap`</span> to handle cleanup on exit if the script creates temporary files or resources.
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#10-advanced-instructions-__codelineno-0-23"></a><span class="k">-</span><span class="w"> </span>All scripts must be POSIX-compliant unless Bash-specific features are required.
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#10-advanced-instructions-__codelineno-0-24"></a><span class="k">-</span><span class="w"> </span>Add a usage/help function if the script takes arguments.
+</span></code></pre></div></li>
+<li>Save the file.        </li>
+</ul>
+<hr />
+<h2 id="10-advanced-instructions-07-instructions-in-action">07. Instructions in Action<a class="headerlink" href="#10-advanced-instructions-07-instructions-in-action" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Now, when you will create bash scripts in the <code>script</code> directory, GitHub Copilot will follow the custom instructions defined in <code>script.instructions.md</code>.</li>
+<li>Test this by creating a new bash script in the <code>script</code> directory and observing how Copilot generates code based on the specified instructions.</li>
+<li>
+<p>Use the following prompt in Copilot Chat to generate a new bash script:</p>
+<div class="admonition explorer">
+<p class="admonition-title">Prompt to use in Copilot Chat</p>
+<ul>
+<li>Create a bash script that print the current date and time</li>
+<li>The bash script should be in the <code>script</code> directory.</li>
+</ul>
+</div>
+<p><details>
+<summary>Expected Generated Code</summary>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#10-advanced-instructions-__codelineno-1-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#10-advanced-instructions-__codelineno-1-2"></a><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#10-advanced-instructions-__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#10-advanced-instructions-__codelineno-1-4"></a><span class="c1"># Load .env if present in the same directory</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#10-advanced-instructions-__codelineno-1-5"></a><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">/.env&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#10-advanced-instructions-__codelineno-1-6"></a><span class="nb">source</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$0</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">/.env&quot;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#10-advanced-instructions-__codelineno-1-7"></a><span class="k">fi</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#10-advanced-instructions-__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#10-advanced-instructions-__codelineno-1-9"></a><span class="c1"># Color definitions</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#10-advanced-instructions-__codelineno-1-10"></a><span class="nv">GREEN</span><span class="o">=</span><span class="s2">&quot;\033[0;32m&quot;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#10-advanced-instructions-__codelineno-1-11"></a><span class="nv">RED</span><span class="o">=</span><span class="s2">&quot;\033[0;31m&quot;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#10-advanced-instructions-__codelineno-1-12"></a><span class="nv">YELLOW</span><span class="o">=</span><span class="s2">&quot;\033[1;33m&quot;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#10-advanced-instructions-__codelineno-1-13"></a><span class="nv">BLUE</span><span class="o">=</span><span class="s2">&quot;\033[0;34m&quot;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#10-advanced-instructions-__codelineno-1-14"></a><span class="nv">NC</span><span class="o">=</span><span class="s2">&quot;\033[0m&quot;</span><span class="w"> </span><span class="c1"># No Color</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#10-advanced-instructions-__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#10-advanced-instructions-__codelineno-1-16"></a><span class="c1"># Logging functions</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#10-advanced-instructions-__codelineno-1-17"></a>log_info<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#10-advanced-instructions-__codelineno-1-18"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">GREEN</span><span class="si">}</span><span class="s2">[INFO] </span><span class="nv">$*</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#10-advanced-instructions-__codelineno-1-19"></a><span class="o">}</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#10-advanced-instructions-__codelineno-1-20"></a>log_error<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#10-advanced-instructions-__codelineno-1-21"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">RED</span><span class="si">}</span><span class="s2">[ERROR] </span><span class="nv">$*</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#10-advanced-instructions-__codelineno-1-22"></a><span class="o">}</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#10-advanced-instructions-__codelineno-1-23"></a>log_debug<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#10-advanced-instructions-__codelineno-1-24"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">DEBUG</span><span class="k">:-</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#10-advanced-instructions-__codelineno-1-25"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BLUE</span><span class="si">}</span><span class="s2">[DEBUG] </span><span class="nv">$*</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#10-advanced-instructions-__codelineno-1-26"></a><span class="w">    </span><span class="k">fi</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#10-advanced-instructions-__codelineno-1-27"></a><span class="o">}</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#10-advanced-instructions-__codelineno-1-28"></a>log_warn<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#10-advanced-instructions-__codelineno-1-29"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">YELLOW</span><span class="si">}</span><span class="s2">[WARN] </span><span class="nv">$*</span><span class="si">${</span><span class="nv">NC</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#10-advanced-instructions-__codelineno-1-30"></a><span class="o">}</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#10-advanced-instructions-__codelineno-1-31"></a>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#10-advanced-instructions-__codelineno-1-32"></a><span class="c1"># Print current date and time</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#10-advanced-instructions-__codelineno-1-33"></a>print_datetime<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#10-advanced-instructions-__codelineno-1-34"></a><span class="w">    </span>log_info<span class="w"> </span><span class="s2">&quot;Current date and time: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#10-advanced-instructions-__codelineno-1-35"></a><span class="o">}</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#10-advanced-instructions-__codelineno-1-36"></a>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#10-advanced-instructions-__codelineno-1-37"></a>print_datetime
+</span></code></pre></div>
+</details>      </p>
+</li>
+</ul></section><section class="print-page" id="11-custom-prompts" heading-number="2.12"><h1 id="11-custom-prompts-lab-11-reusable-prompts-githubprompts">Lab 11 - Reusable Prompts (.github/prompts)<a class="headerlink" href="#11-custom-prompts-lab-11-reusable-prompts-githubprompts" title="Permanent link">&para;</a></h1>
+<h2 id="11-custom-prompts-01-introduction">01 - Introduction<a class="headerlink" href="#11-custom-prompts-01-introduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Reusable Prompts</strong> (also known as Prompt Files) allow you to define and share complex prompts across your team.</li>
+<li>They are stored as Markdown files in a <code>.github/prompts</code> directory.</li>
+<li>You can reference them in Copilot Chat to quickly apply a specific set of instructions or context.</li>
+</ul>
+<hr />
+<h2 id="11-custom-prompts-02-setup">02 - Setup<a class="headerlink" href="#11-custom-prompts-02-setup" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>To use this feature, you need to create a specific directory structure in your repository.</p>
+</li>
+<li>
+<p>Create a folder named <code>.github</code> in the root of your workspace (if it doesn&rsquo;t exist).</p>
+</li>
+<li>Inside <code>.github</code>, create a folder named <code>prompts</code>.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#11-custom-prompts-__codelineno-0-1"></a>.github/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#11-custom-prompts-__codelineno-0-2"></a>└── prompts/
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#11-custom-prompts-__codelineno-0-3"></a>    ├── code-review.prompt.md
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#11-custom-prompts-__codelineno-0-4"></a>    ├── test-gen.prompt.md
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#11-custom-prompts-__codelineno-0-5"></a>    └── ...
+</span></code></pre></div>
+<hr />
+<h2 id="11-custom-prompts-03-anatomy-of-a-prompt-file">03 - Anatomy of a Prompt File<a class="headerlink" href="#11-custom-prompts-03-anatomy-of-a-prompt-file" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A prompt file is a standard Markdown file with the <code>.prompt.md</code> extension.</li>
+<li>It can contain:<ul>
+<li><strong>Text</strong>: The instructions for Copilot.</li>
+<li><strong>Context References</strong>: You can use <code>#file</code> references to include other files relative to the prompt file.</li>
+<li><strong>Variables</strong>: (Advanced) You can define template variables.</li>
+</ul>
+</li>
+</ul>
+<h4 id="11-custom-prompts-example-explain-codepromptmd">Example: <code>explain-code.prompt.md</code><a class="headerlink" href="#11-custom-prompts-example-explain-codepromptmd" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>
+<p>Create a file named <code>explain-code.prompt.md</code> in the <code>.github/prompts</code> directory with the following content:</p>
+<ul>
+<li>You are an expert educator.</li>
+<li>Explain the selected code to a junior developer.</li>
+<li>Use analogies and simple language.</li>
+<li>Focus on the &ldquo;Why&rdquo; rather than the &ldquo;What&rdquo;.</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="11-custom-prompts-04-using-prompt-files">04 - Using Prompt Files<a class="headerlink" href="#11-custom-prompts-04-using-prompt-files" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Once you have created a prompt file, you can use it in Copilot Chat.</li>
+<li>In the Chat input, type <code>#</code> followed by the name of your prompt file (e.g., <code>#explain-code</code>).</li>
+<li>Copilot will resolve the file and use its content as the prompt context.</li>
+</ul>
+<hr />
+<h2 id="11-custom-prompts-05-hands-on-creating-a-reusable-prompt">05 - Hands-On: Creating a Reusable Prompt<a class="headerlink" href="#11-custom-prompts-05-hands-on-creating-a-reusable-prompt" title="Permanent link">&para;</a></h2>
+<h3 id="11-custom-prompts-exercise-1-create-the-directory-structure">Exercise 1: Create the Directory Structure<a class="headerlink" href="#11-custom-prompts-exercise-1-create-the-directory-structure" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open your terminal.</li>
+<li>Create the directory <code>.github/prompts</code>.</li>
+</ol>
+<h3 id="11-custom-prompts-exercise-2-create-a-code-review-prompt">Exercise 2: Create a &ldquo;Code Review&rdquo; Prompt<a class="headerlink" href="#11-custom-prompts-exercise-2-create-a-code-review-prompt" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Create a file named <code>.github/prompts/review.prompt.md</code>.</li>
+<li>
+<p>Add the following content:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#11-custom-prompts-__codelineno-1-1"></a>You are a strict code reviewer.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#11-custom-prompts-__codelineno-1-2"></a>Review the selected code for:
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#11-custom-prompts-__codelineno-1-3"></a><span class="k">1.</span> Security vulnerabilities.
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#11-custom-prompts-__codelineno-1-4"></a><span class="k">2.</span> Performance bottlenecks.
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#11-custom-prompts-__codelineno-1-5"></a><span class="k">3.</span> Adherence to PEP 8 (Python) standards.
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#11-custom-prompts-__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#11-custom-prompts-__codelineno-1-7"></a>Provide your feedback in a markdown table with columns:
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#11-custom-prompts-__codelineno-1-8"></a><span class="k">-</span><span class="w"> </span>Severity (High/Medium/Low)
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#11-custom-prompts-__codelineno-1-9"></a><span class="k">-</span><span class="w"> </span>Issue
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#11-custom-prompts-__codelineno-1-10"></a><span class="k">-</span><span class="w"> </span>Suggestion
+</span></code></pre></div>
+</li>
+</ol>
+<h3 id="11-custom-prompts-exercise-3-use-the-prompt">Exercise 3: Use the Prompt<a class="headerlink" href="#11-custom-prompts-exercise-3-use-the-prompt" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open <code>calculator/calculator.py</code>.</li>
+<li>Select the <code>divide</code> function.</li>
+<li>Open Copilot Chat.</li>
+<li>Type <code>#review</code> (or the name of your file) and press Enter.<ul>
+<li><em>Note: If <code>#review</code> doesn&rsquo;t auto-complete, you can manually attach the file using the paperclip icon or by typing <code>#file:.github/prompts/review.prompt.md</code>.</em></li>
+</ul>
+</li>
+<li>Observe the structured output.</li>
+</ol>
+<details>
+<summary>Solution: review.prompt.md</summary>
+
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#11-custom-prompts-__codelineno-2-1"></a>You are a strict code reviewer.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#11-custom-prompts-__codelineno-2-2"></a>Review the selected code for:
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#11-custom-prompts-__codelineno-2-3"></a><span class="k">1.</span> Security vulnerabilities.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#11-custom-prompts-__codelineno-2-4"></a><span class="k">2.</span> Performance bottlenecks.
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#11-custom-prompts-__codelineno-2-5"></a><span class="k">3.</span> Adherence to PEP 8 (Python) standards.
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#11-custom-prompts-__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#11-custom-prompts-__codelineno-2-7"></a>Provide your feedback in a markdown table with columns:
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#11-custom-prompts-__codelineno-2-8"></a><span class="k">-</span><span class="w"> </span>Severity (High/Medium/Low)
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#11-custom-prompts-__codelineno-2-9"></a><span class="k">-</span><span class="w"> </span>Issue
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#11-custom-prompts-__codelineno-2-10"></a><span class="k">-</span><span class="w"> </span>Suggestion
+</span></code></pre></div>
+</details></section><section class="print-page" id="12-custom-agents" heading-number="2.13"><h1 id="12-custom-agents-lab-12-custom-agents-chat-extensions">Lab 12 - Custom Agents &amp; Chat Extensions<a class="headerlink" href="#12-custom-agents-lab-12-custom-agents-chat-extensions" title="Permanent link">&para;</a></h1>
+<h2 id="12-custom-agents-01-introduction">01 - Introduction<a class="headerlink" href="#12-custom-agents-01-introduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li>GitHub Copilot Chat can be extended using <strong>Chat Extensions</strong> (also known as Agents or Participants).</li>
+<li>These allow you to bring your own domain knowledge, tools, and workflows directly into the Copilot Chat interface.</li>
+<li>You interact with them using the <code>@</code> symbol (e.g., <code>@workspace</code>, <code>@azure</code>, <code>@my-agent</code>).</li>
+</ul>
+<hr />
+<h2 id="12-custom-agents-02-anatomy">02 - Anatomy<a class="headerlink" href="#12-custom-agents-02-anatomy" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A custom agent is essentially a VS Code Extension that contributes a <code>chatParticipants</code> point.</li>
+</ul>
+<h4 id="12-custom-agents-key-components">Key Components:<a class="headerlink" href="#12-custom-agents-key-components" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong><code>package.json</code> (Metadata)</strong>: Registers the agent, its name, and description.</li>
+<li><strong>Extension Code (TypeScript/JavaScript)</strong>: Handles the chat request.</li>
+<li><strong>Language Model Access</strong>: The agent can send messages to the Copilot LLM to generate responses.</li>
+<li><strong>Tools/Commands</strong>: The agent can execute VS Code commands or call external APIs.</li>
+</ol>
+<hr />
+<h2 id="12-custom-agents-03-example-beast-mode-agent">03 - Example: &ldquo;Beast Mode&rdquo; Agent<a class="headerlink" href="#12-custom-agents-03-example-beast-mode-agent" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Let&rsquo;s imagine an agent called <code>@beast</code> that reviews your code with extreme enthusiasm and intensity.</li>
+</ul>
+<h4 id="12-custom-agents-the-persona">The Persona<a class="headerlink" href="#12-custom-agents-the-persona" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Instead of &ldquo;Here is a fix,&rdquo; it says &ldquo;DESTROY WEAK CODE! UNLEASH PERFORMANCE!&rdquo;</li>
+</ul>
+<h3 id="12-custom-agents-1-metadata-packagejson">1. Metadata (<code>package.json</code>)<a class="headerlink" href="#12-custom-agents-1-metadata-packagejson" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <code>package.json</code> file is where you define the metadata for your agent. </li>
+<li>This tells VS Code that your extension provides a chat participant.</li>
+</ul>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#12-custom-agents-__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#12-custom-agents-__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;contributes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#12-custom-agents-__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;chatParticipants&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#12-custom-agents-__codelineno-0-4"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#12-custom-agents-__codelineno-0-5"></a><span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;chat-beast-mode&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#12-custom-agents-__codelineno-0-6"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beast&quot;</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#12-custom-agents-__codelineno-0-7"></a><span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reviews code with extreme intensity and motivation.&quot;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#12-custom-agents-__codelineno-0-8"></a><span class="w">        </span><span class="nt">&quot;isSticky&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#12-custom-agents-__codelineno-0-9"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#12-custom-agents-__codelineno-0-10"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#12-custom-agents-__codelineno-0-11"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#12-custom-agents-__codelineno-0-12"></a><span class="p">}</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>id</strong></td>
+<td style="text-align: left;">Unique identifier for the participant.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>name</strong></td>
+<td style="text-align: left;">The keyword users type after <code>@</code> (e.g., <code>@beast</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>description</strong></td>
+<td style="text-align: left;">Shown in the suggestion list.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>isSticky</strong></td>
+<td style="text-align: left;">If true, the agent remains active for subsequent messages until explicitly cleared.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-custom-agents-2-the-handler-typescript">2. The Handler (TypeScript)<a class="headerlink" href="#12-custom-agents-2-the-handler-typescript" title="Permanent link">&para;</a></h3>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#12-custom-agents-__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">vscode</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;vscode&#39;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#12-custom-agents-__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#12-custom-agents-__codelineno-1-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">activate</span><span class="p">(</span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="kt">vscode.ExtensionContext</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#12-custom-agents-__codelineno-1-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">beastParticipant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">chat</span><span class="p">.</span><span class="nx">createChatParticipant</span><span class="p">(</span><span class="s1">&#39;chat-beast-mode&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">request</span><span class="p">,</span><span class="w"> </span><span class="nx">context</span><span class="p">,</span><span class="w"> </span><span class="nx">stream</span><span class="p">,</span><span class="w"> </span><span class="nx">token</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#12-custom-agents-__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#12-custom-agents-__codelineno-1-6"></a><span class="w">        </span><span class="c1">// 1. Define the System Prompt (The Persona)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#12-custom-agents-__codelineno-1-7"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">systemPrompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`You are a coding coach in BEAST MODE. </span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#12-custom-agents-__codelineno-1-8"></a><span class="sb">        You are intense, high-energy, and use all caps frequently. </span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#12-custom-agents-__codelineno-1-9"></a><span class="sb">        You don&#39;t just fix code; you OBLITERATE bugs and MAXIMIZE efficiency.</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#12-custom-agents-__codelineno-1-10"></a><span class="sb">        Always end with &quot;KEEP GRINDING!&quot;`</span><span class="p">;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#12-custom-agents-__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#12-custom-agents-__codelineno-1-12"></a><span class="w">        </span><span class="c1">// 2. Prepare the messages</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#12-custom-agents-__codelineno-1-13"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#12-custom-agents-__codelineno-1-14"></a><span class="w">            </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">LanguageModelChatMessage</span><span class="p">.</span><span class="nx">User</span><span class="p">(</span><span class="nx">systemPrompt</span><span class="p">),</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#12-custom-agents-__codelineno-1-15"></a><span class="w">            </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">LanguageModelChatMessage</span><span class="p">.</span><span class="nx">User</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">prompt</span><span class="p">)</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#12-custom-agents-__codelineno-1-16"></a><span class="w">        </span><span class="p">];</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#12-custom-agents-__codelineno-1-17"></a>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#12-custom-agents-__codelineno-1-18"></a><span class="w">        </span><span class="c1">// 3. Select the Model (GPT-4 usually)</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#12-custom-agents-__codelineno-1-19"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">lm</span><span class="p">.</span><span class="nx">selectChatModels</span><span class="p">({</span><span class="w"> </span><span class="nx">family</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4&#39;</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#12-custom-agents-__codelineno-1-20"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">model</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#12-custom-agents-__codelineno-1-21"></a><span class="w">            </span><span class="nx">stream</span><span class="p">.</span><span class="nx">markdown</span><span class="p">(</span><span class="s2">&quot;ERROR: NO MODELS FOUND TO HANDLE THE POWER!&quot;</span><span class="p">);</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#12-custom-agents-__codelineno-1-22"></a><span class="w">            </span><span class="k">return</span><span class="p">;</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#12-custom-agents-__codelineno-1-23"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#12-custom-agents-__codelineno-1-24"></a>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#12-custom-agents-__codelineno-1-25"></a><span class="w">        </span><span class="c1">// 4. Send request to Copilot</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#12-custom-agents-__codelineno-1-26"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">chatResponse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">model</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">sendRequest</span><span class="p">(</span><span class="nx">messages</span><span class="p">,</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="nx">token</span><span class="p">);</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#12-custom-agents-__codelineno-1-27"></a>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#12-custom-agents-__codelineno-1-28"></a><span class="w">        </span><span class="c1">// 5. Stream the response back to the user</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#12-custom-agents-__codelineno-1-29"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">fragment</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">chatResponse</span><span class="p">.</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#12-custom-agents-__codelineno-1-30"></a><span class="w">            </span><span class="nx">stream</span><span class="p">.</span><span class="nx">markdown</span><span class="p">(</span><span class="nx">fragment</span><span class="p">);</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#12-custom-agents-__codelineno-1-31"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#12-custom-agents-__codelineno-1-32"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#12-custom-agents-__codelineno-1-33"></a>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#12-custom-agents-__codelineno-1-34"></a><span class="w">    </span><span class="nx">context</span><span class="p">.</span><span class="nx">subscriptions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">beastParticipant</span><span class="p">);</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#12-custom-agents-__codelineno-1-35"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="12-custom-agents-04-advanced-concepts">04 - Advanced Concepts<a class="headerlink" href="#12-custom-agents-04-advanced-concepts" title="Permanent link">&para;</a></h2>
+<h3 id="12-custom-agents-module-model-selection">Module &amp; Model Selection<a class="headerlink" href="#12-custom-agents-module-model-selection" title="Permanent link">&para;</a></h3>
+<ul>
+<li>You can query for specific models based on capabilities.</li>
+<li><code>vscode.lm.selectChatModels({ vendor: 'copilot', family: 'gpt-4' })</code> ensures you get the high-quality model needed for complex reasoning.</li>
+</ul>
+<h3 id="12-custom-agents-context-history">Context &amp; History<a class="headerlink" href="#12-custom-agents-context-history" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <code>context</code> object passed to the handler contains the <strong>history</strong> of the conversation.</li>
+<li>You must pass this history back to the LLM if you want the agent to remember previous turns.</li>
+</ul>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#12-custom-agents-__codelineno-2-1"></a><span class="c1">// Adding history to the prompt</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#12-custom-agents-__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">history</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">h</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#12-custom-agents-__codelineno-2-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">h</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">ChatRequestTurn</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#12-custom-agents-__codelineno-2-4"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">LanguageModelChatMessage</span><span class="p">.</span><span class="nx">User</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">prompt</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#12-custom-agents-__codelineno-2-5"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#12-custom-agents-__codelineno-2-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">vscode</span><span class="p">.</span><span class="nx">LanguageModelChatMessage</span><span class="p">.</span><span class="nx">Assistant</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// Simplified</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#12-custom-agents-__codelineno-2-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#12-custom-agents-__codelineno-2-8"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="12-custom-agents-tool-calling-function-calling">Tool Calling (Function Calling)<a class="headerlink" href="#12-custom-agents-tool-calling-function-calling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Agents can register <strong>tools</strong> that the LLM can decide to call.</li>
+<li>Example: An agent that can query a database.</li>
+<li>You provide the tool definition (JSON schema) to the LLM, and if the LLM wants to use it, it returns a structured response which your extension executes.</li>
+</ul>
+<hr />
+<h2 id="12-custom-agents-05-hands-on-designing-your-agent">05 - Hands-On: Designing Your Agent<a class="headerlink" href="#12-custom-agents-05-hands-on-designing-your-agent" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Since we cannot compile extensions in this lab environment, we will design the <strong>System Prompt</strong> and <strong>Metadata</strong> for a custom agent you might want to build.</li>
+</ul>
+<hr />
+<h3 id="12-custom-agents-exercise-1-define-the-metadata">Exercise 1: Define the Metadata<a class="headerlink" href="#12-custom-agents-exercise-1-define-the-metadata" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Create a file <code>my-agent-metadata.json</code>.</li>
+<li>Define the <code>chatParticipants</code> contribution.<ul>
+<li><strong>Name</strong>: What will users type? (e.g., <code>@doc-writer</code>)</li>
+<li><strong>Description</strong>: What does it do?</li>
+<li><strong>Commands</strong>: Does it have sub-commands? (e.g., <code>/explain</code>, <code>/fix</code>)</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="12-custom-agents-exercise-2-craft-the-system-prompt">Exercise 2: Craft the System Prompt<a class="headerlink" href="#12-custom-agents-exercise-2-craft-the-system-prompt" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Create a file <code>my-agent-prompt.md</code>.</li>
+<li>Write the instructions that define your agent&rsquo;s behavior.<ul>
+<li><strong>Role</strong>: Who is the agent?</li>
+<li><strong>Tone</strong>: Professional, funny, concise?</li>
+<li><strong>Constraints</strong>: What should it <em>not</em> do?</li>
+<li><strong>Context</strong>: What does it need to know about the user&rsquo;s code?</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="12-custom-agents-exercise-3-simulation">Exercise 3: Simulation<a class="headerlink" href="#12-custom-agents-exercise-3-simulation" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the Chat view.</li>
+<li>Paste your <strong>System Prompt</strong> from Exercise 2.</li>
+<li>Then, act as the user and ask a question.</li>
+<li>See if Copilot (simulating your agent) behaves as expected.</li>
+</ol>
+<hr />
+<details>
+<summary>Solution: my-agent-metadata.json</summary>
+
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#12-custom-agents-__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#12-custom-agents-__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;contributes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#12-custom-agents-__codelineno-3-3"></a><span class="w">    </span><span class="nt">&quot;chatParticipants&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#12-custom-agents-__codelineno-3-4"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#12-custom-agents-__codelineno-3-5"></a><span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;chat-doc-writer&quot;</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#12-custom-agents-__codelineno-3-6"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doc-writer&quot;</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#12-custom-agents-__codelineno-3-7"></a><span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Generates comprehensive documentation for your code.&quot;</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#12-custom-agents-__codelineno-3-8"></a><span class="w">        </span><span class="nt">&quot;isSticky&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#12-custom-agents-__codelineno-3-9"></a><span class="w">        </span><span class="nt">&quot;commands&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#12-custom-agents-__codelineno-3-10"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#12-custom-agents-__codelineno-3-11"></a><span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;explain&quot;</span><span class="p">,</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#12-custom-agents-__codelineno-3-12"></a><span class="w">                </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Explain the code in detail&quot;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#12-custom-agents-__codelineno-3-13"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#12-custom-agents-__codelineno-3-14"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#12-custom-agents-__codelineno-3-15"></a><span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fix&quot;</span><span class="p">,</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#12-custom-agents-__codelineno-3-16"></a><span class="w">                </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Fix documentation errors&quot;</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#12-custom-agents-__codelineno-3-17"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#12-custom-agents-__codelineno-3-18"></a><span class="w">        </span><span class="p">]</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#12-custom-agents-__codelineno-3-19"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#12-custom-agents-__codelineno-3-20"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#12-custom-agents-__codelineno-3-21"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#12-custom-agents-__codelineno-3-22"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
+
+<hr />
+<details>
+<summary>Solution: my-agent-prompt.md</summary>
+
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#12-custom-agents-__codelineno-4-1"></a>You are a technical documentation expert.
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#12-custom-agents-__codelineno-4-2"></a>Your goal is to write clear, concise, and comprehensive documentation for code.
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#12-custom-agents-__codelineno-4-3"></a>You should focus on:
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#12-custom-agents-__codelineno-4-4"></a><span class="k">-</span><span class="w"> </span>Explaining the purpose of functions and classes.
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#12-custom-agents-__codelineno-4-5"></a><span class="k">-</span><span class="w"> </span>Documenting parameters and return values.
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#12-custom-agents-__codelineno-4-6"></a><span class="k">-</span><span class="w"> </span>Providing usage examples.
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#12-custom-agents-__codelineno-4-7"></a><span class="k">-</span><span class="w"> </span>Using professional and neutral tone.
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#12-custom-agents-__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#12-custom-agents-__codelineno-4-9"></a>When the user asks to document code, generate Markdown documentation.
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#12-custom-agents-__codelineno-4-10"></a>If the user uses <span class="sb">`/explain`</span>, provide a high-level overview.
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#12-custom-agents-__codelineno-4-11"></a>If the user uses <span class="sb">`/fix`</span>, look for missing or incorrect comments and correct them.
+</span></code></pre></div>
+</details></section></section>
                     <section class='print-page md-section' id='section-3' heading-number='3'>
                         <h1>Assets<a class='headerlink' href='#section-3' title='Permanent link'></a>
                         </h1>
@@ -2636,6 +3316,11 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
                 .print-site-enumerate-headings #06-plan-mode h2:before { content: '2.7.' counter(counter-06-plan-mode-2) ' ' }
                 .print-site-enumerate-headings #06-plan-mode h2 {  counter-increment: counter-06-plan-mode-2 }
             
+.print-site-enumerate-headings #07-agent-mode-part01 > h1:before { content: '2.8 ' }
+
+                .print-site-enumerate-headings #07-agent-mode-part01 h2:before { content: '2.8.' counter(counter-07-agent-mode-part01-2) ' ' }
+                .print-site-enumerate-headings #07-agent-mode-part01 h2 {  counter-increment: counter-07-agent-mode-part01-2 }
+            
 .print-site-enumerate-headings #08-agent-mode-part02 > h1:before { content: '2.9 ' }
 
                 .print-site-enumerate-headings #08-agent-mode-part02 h2:before { content: '2.9.' counter(counter-08-agent-mode-part02-2) ' ' }
@@ -2645,6 +3330,21 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
 
                 .print-site-enumerate-headings #09-custom-instructions h2:before { content: '2.10.' counter(counter-09-custom-instructions-2) ' ' }
                 .print-site-enumerate-headings #09-custom-instructions h2 {  counter-increment: counter-09-custom-instructions-2 }
+            
+.print-site-enumerate-headings #10-advanced-instructions > h1:before { content: '2.11 ' }
+
+                .print-site-enumerate-headings #10-advanced-instructions h2:before { content: '2.11.' counter(counter-10-advanced-instructions-2) ' ' }
+                .print-site-enumerate-headings #10-advanced-instructions h2 {  counter-increment: counter-10-advanced-instructions-2 }
+            
+.print-site-enumerate-headings #11-custom-prompts > h1:before { content: '2.12 ' }
+
+                .print-site-enumerate-headings #11-custom-prompts h2:before { content: '2.12.' counter(counter-11-custom-prompts-2) ' ' }
+                .print-site-enumerate-headings #11-custom-prompts h2 {  counter-increment: counter-11-custom-prompts-2 }
+            
+.print-site-enumerate-headings #12-custom-agents > h1:before { content: '2.13 ' }
+
+                .print-site-enumerate-headings #12-custom-agents h2:before { content: '2.13.' counter(counter-12-custom-agents-2) ' ' }
+                .print-site-enumerate-headings #12-custom-agents h2 {  counter-increment: counter-12-custom-agents-2 }
             
 .print-site-enumerate-headings #section-3 > h1:before { content: '3 ' }
 .print-site-enumerate-headings #assets-calculator-code > h1:before { content: '3.1 ' }
@@ -2914,7 +3614,7 @@ These apply to <em>all</em> projects you work on in that IDE.</p>
       
         <script src="../js/print-site.js"></script>
       
-        <script src="https://buttons.github.io/buttons.js?v=1766359656"></script>
+        <script src="https://buttons.github.io/buttons.js?v=1766437737"></script>
       
     
   </body>
