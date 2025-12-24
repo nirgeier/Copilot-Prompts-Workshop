@@ -2,126 +2,198 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/01-setup/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/02-suggestions-inline/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/03-inline-chat/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/04-chat/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/05-builtin-prompts/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/06-plan-mode/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/07-agent-mode-part01/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/08-agent-mode-part02/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/09-custom-instructions/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/10-advanced-instructions/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/11-custom-prompts/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/12-custom-agents/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/13-custom-prompts/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/welcome/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/01-setup-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/02-suggestions-inline-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-01/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/03-inline-chat-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-02/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/04-chat-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-03/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/05-builtin-prompts-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-04/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/06-plan-mode-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-05/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/07-agent-mode-part01-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-06/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/08-agent-mode-part01-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-07/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/08-agent-mode-part02-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-08/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/09-custom-instructions-assets/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-09/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/calculator-code/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-10/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
-         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/assets/calculator-tests/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-11/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-12/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/Tasks/Lab-13/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/01-setup-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/02-suggestions-inline-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/03-inline-chat-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/04-chat-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/05-builtin-prompts-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/06-plan-mode-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/07-agent-mode-part01-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/08-agent-mode-part01-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/08-agent-mode-part02-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/09-custom-instructions-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/10-advanced-instructions-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/11-custom-prompts-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/12-custom-agents-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/13-custom-prompts-assets/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/calculator-code/</loc>
+         <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+         <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/labs-assets/calculator-tests/</loc>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/custom-instructions/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/good-vs-bad-prompts/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/perf-agent/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
     <url>
          <loc>https://nirgeier.github.io/Copilot-Prompts-Workshop/resources/test-agent/</loc>
-         <lastmod>2025-12-22</lastmod>
+         <lastmod>2025-12-24</lastmod>
     </url>
 </urlset>
